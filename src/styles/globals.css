@@ -1,8 +1,9 @@
 @import "tailwindcss";
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --yellow : #e7a220;
+  --gray: #303030;
+  --white:#fdfcfc;
+  --black: #1f1f1f;
+  --yellow : #f7c465;
   --lightYellow : #ffe9ba;
 }
 
@@ -29,8 +30,8 @@
 
 @layer utilities {
   ::selection {
-    background-color: var(--lightYellow); 
-    color: var(--foreground); 
+    background-color: var(--yellow); 
+    color: var(--black); 
   } 
 }
 
