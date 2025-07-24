@@ -16,7 +16,7 @@ export default function Toogle() {
             document.documentElement.style.setProperty("--white", "#fdfcfc");
             document.documentElement.style.setProperty("--black", "#121212 ");
             document.documentElement.style.setProperty("--gray", "#303030");
-            document.documentElement.style.setProperty("--yellow", "#ffd88f");
+            document.documentElement.style.setProperty("--yellow", "#ebad3aff");
         }else{
             setEmojiToggle("🌙");
             document.documentElement.style.setProperty("--white", "#121212 ");

@@ -38,6 +38,7 @@
         transform: translateY(0);
       }
     }
+
   
 
 }
@@ -83,6 +84,19 @@
     grid-area: name-area;
   }
 
+
+  @keyframes up {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-200px);
+    }
+  }
+
+  .animate-up {
+    animation: var(--animate-up);
+  }
 
 }
 
