@@ -27,7 +27,7 @@ export default function Toogle() {
     }, [isDay]);
 
     return (
-        <p className="z-40 cursor-pointer fixed absolute top-2 sm:right-1 bg-transparent font-mono" onClick={toggleClick}><span className='border border-(--yellow) rounded-full p-0.5 py-1'>{emojiToggle}</span></p>
+        <p className="z-40 cursor-pointer fixed absolute top-2 xs:right-1 bg-transparent font-mono" onClick={toggleClick}><span className='border border-(--yellow) rounded-full p-0.5 py-1'>{emojiToggle}</span></p>
       
     )
 }
