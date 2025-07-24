@@ -1,10 +1,10 @@
 @import "tailwindcss";
 :root {
-  --gray: #303030;
-  --white:#fdfcfc;
-  --black: #1f1f1f;
-  --yellow : #f7c465;
-  --lightYellow : #ffe9ba;
+  --gray: #d9d9d9ff;
+  --white:#121212;
+  --black: #fdfcfc;
+  --yellow : #e0a73cff;
+
 }
 
 
@@ -26,6 +26,19 @@
     }
   }
 
+    --animate-fade: fadeInDown 2s ease-in-out;
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+
 }
 
 @layer utilities {
@@ -33,7 +46,45 @@
     background-color: var(--yellow); 
     color: var(--black); 
   } 
+
+
+  .hide-scrollbar {
+    overflow-y: auto;
+    scrollbar-width: none;  /* Untuk browser Firefox */
+    -ms-overflow-style: none;  /* Untuk browser IE */
+  }
+
+
+  .hide-scrollbar::-webkit-scrollbar {
+    overflow-y: auto;
+    display: none;
+  }
+
+
+  .grid-areas-layout {
+    display: grid;
+    grid-template-areas: 
+      "image-area hello-area"
+      "image-area name-area";
+    grid-template-columns: 0.3fr 1fr; /* Adjust these values based on your layout */
+    grid-template-rows: auto;
+  }
+
+  .image-area {
+    grid-area: image-area;
+  }
+
+  .hello-area {
+    grid-area: hello-area;
+  }
+
+  .name-area {
+    grid-area: name-area;
+  }
+
 }
+
+
 
 
 
