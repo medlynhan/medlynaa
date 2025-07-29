@@ -1,65 +1,76 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --gray: #d9d9d9ff;
-  --white:#121212;
+  --white: #121212;
   --black: #fdfcfc;
-  --yellow : #eec06aff;
-
+  --yellow: #eec06aff;
 }
-
 
 @theme {
-  --breakpoint-xs: 0px;
-  --breakpoint-sm: 412px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-  --breakpoint-xl: 1200px;
-  --breakpoint-2xl: 1400px;
-  --breakpoint-3xl: 1600px;
+  --breakpoint-xs: 0px; /*samsung phone*/
+  --breakpoint-sm: 412px; /*iphone phone*/
+  --breakpoint-md: 768px; /*tablet*/
+  --breakpoint-lg: 1024px; /*small laptop*/
+  --breakpoint-xl: 1200px; /*laptop 14 inch*/
+  --breakpoint-2xl: 1400px; /*laptop 15 inch (my laptop)*/
+  --breakpoint-3xl: 1600px; /*laptop 16 inch*/
 
-  
-  
 
 }
-@layer base{
+
+
+@layer base {
+  body {
+    @apply overflow-x-hidden scroll-smooth w-screen; /*base styling*/
+    @apply flex flex-col justify-start items-start border-2 border-blue-500; /*flex*/
+    @apply text-base font-sans text-left; /*font*/
+    @apply border-2 border-yellow-200; /*border*/
+
+  }
+
   body{
-    @apply bg-(--yellow) overflow-x-hidden scroll-smooth;
+    background-color: var(--white);
+    color: var(--gray);
   }
 }
 
+@layer components {
 
+  .projects-container{
+    @apply flex flex-col gap-10 border-2 border-blue-500 p-10 w-full items-end;
+    color:  var(--black);
+  }
 
+  .project{
+    @apply flex flex-col border-1 gap-6 p-6 cursor-pointer rounded-sm transition duration-200 ease-in-out w-full;
+    color:  var(--gray);
+  }
+
+}
 
 @layer utilities {
   ::selection {
     background-color: var(--yellow); 
     color: var(--black); 
-  } 
-
+  }
 
   .hide-scrollbar {
     overflow-y: auto;
-    scrollbar-width: none;  /* Untuk browser Firefox */
-    -ms-overflow-style: none;  /* Untuk browser IE */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
-
 
   .hide-scrollbar::-webkit-scrollbar {
-    overflow-y: auto;
     display: none;
   }
-
 
   .grid-areas-layout {
     display: grid;
     grid-template-areas: 
       "image-area hello-area"
       "image-area name-area";
-    grid-template-columns: 0.3fr 1fr; /* Adjust these values based on your layout */
+    grid-template-columns: 0.3fr 1fr;
     grid-template-rows: auto;
   }
 
@@ -75,7 +86,6 @@
     grid-area: name-area;
   }
 
-
   @keyframes up {
     0% {
       transform: translateY(0px);
@@ -89,13 +99,5 @@
     animation: var(--animate-up);
   }
 
-  
+
 }
-
-
-
-
-
-
-
-

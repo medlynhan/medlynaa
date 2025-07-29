@@ -9,16 +9,40 @@ export default function Project({title,description,proglang, link}) {
     window.open(link, "_blank");
   };
 
+  const ImageWithOverlay = () => {
+    return (
+      <div className="relative inline-block group">
+        <Image
+          src="/tapaknusa.png"
+          alt="Madeline Profile"
+          width={250}
+          height={100}
+          className="rounded-sm"
+        />
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-yellow-500 opacity-0 group-hover:opacity-40 transition-opacity duration-300 rounded-sm"></div>
+      </div>
+    );
+  }
+
   return (
-    <div className='flex flex-col gap-6 border-1 border p-6 cursor-pointer rounded-sm transition duration-200 ease-in-out  hover:scale-102 hover:border-(--yellow) hover:shadow-md hover:shadow-(--yellow)' onMouseEnter={() => setHover(true)} onMouseLeave={ () => setHover(false)} onClick={() => goToProject()}>
-        <p className={`font-mono  xs:text-2xl md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-semibold ${isHovered ? 'text-(--yellow)' : ''}`}>{title} <span className={`px-1 py-0.5 opacity-100 `}>↗</span></p>
-        <Image src="/tapaknusa.png" alt="Madeline Profile" width={250} height={100} className="rounded-sm" />
-        <p className="projectDescription xs:text-sm sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-xl">{description}</p>
-        <div className='flex justify-center items-center gap-4 justify-start items-start'>
+    <div className='project hover:scale-102 hover:border-(--yellow) hover:shadow-md hover:shadow-(--yellow)' onMouseEnter={() => setHover(true)} onMouseLeave={ () => setHover(false)} onClick={() => goToProject()}>
+        
+        <p className={`font-mono font-medium text-lg ${isHovered ? 'text-(--yellow)' : 'text-(--black)'}`}>{title} ↗</p>
+        
+        <div className='flex flex-col justify-center items-center'>
+          <div  className="bg-(--yellow) rounded-sm">
+            <Image src="/tapaknusa.png" alt="Madeline Profile" width={250} height={100} className={`rounded-sm ${isHovered ? 'opacity-75' : 'opacity-100'}`} />
+          </div>
+        </div>
+
+        <p className="text-justify">{description}</p>
+
+        <div className='grid grid-cols-[repeat(auto-fit,_minmax(5em,_1fr))] gap-4 justify-start items-start'>
            {proglang.map((languange,index)=>(
               <ProgLang key={index} lang={languange} isHovered={isHovered}/>
            ))}
-        </div>
+        </div> 
+
     </div>
     
   )
