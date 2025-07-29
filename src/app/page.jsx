@@ -9,7 +9,6 @@ import { DiVim } from "react-icons/di";
 export default function Home() {
   return (
     <div >
-      <Toogle></Toogle>
       <div className="introduction-container lg:w-[35%] lg:absolute lg:left-0 lg:top-0 lg:fixed lg:ml-[5%] lg:my-[5%]">
         <div className="gap-2 grid-areas-layout">
             <ProfileImage></ProfileImage>
