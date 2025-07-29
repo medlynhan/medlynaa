@@ -4,29 +4,45 @@ import Project from "../components/Project";
 import Icon from "../components/Icon";
 import Toogle from "../components/Toogle";
 import ProfileImage from "../components/ProfileImage";
+import { DiVim } from "react-icons/di";
 
 export default function Home() {
   return (
-
-      <div className="projects-container">
-          <p className="font-mono text-lg">Projects </p>
-          <Project link={"https://tapaknusa.up.railway.app/"} title={"Tapaknusa"} description={"An innovative e-commerce platform that promotes attractions and festivals in Indonesia, making it easy for people to discover and buy tickets for events that aren’t always available online. The goal is to raise awareness about Indonesia’s rich culture and vibrant attractions."} proglang={["Laravel","HTML","CSS","JQuery","MySQL"]} />
-          <Project link={"https://tapaknusa.up.railway.app/"} title={"web2"} description={"An innovative e-commerce platform that promotes attractions and festivals in Indonesia, making it easy for people to discover and buy tickets for events that aren’t always available online. The goal is to raise awareness about Indonesia’s rich culture and vibrant attractions, allowing people to experience and appreciate the beauty of local traditions and festivals."} proglang={["Laravel","HTML","CSS","JQuery","MySQL"]} />
-          <Project link={"https://tapaknusa.up.railway.app/"} title={"web3"} description={"An innovative e-commerce platform that promotes attractions and festivals in Indonesia, making it easy for people to discover and buy tickets for events that aren’t always available online. The goal is to raise awareness about Indonesia’s rich culture and vibrant attractions, allowing people to experience and appreciate the beauty of local traditions and festivals."} proglang={["Laravel","HTML","CSS","JQuery","MySQL"]} />
+    <div >
+      <Toogle></Toogle>
+      <div className="introduction-container lg:w-[35%] lg:absolute lg:left-0 lg:top-0 lg:fixed lg:ml-[5%] lg:my-[5%]">
+        <div className="gap-2 grid-areas-layout">
+            <ProfileImage></ProfileImage>
+            <p className="sub-header-text hello-area">Hello👋</p>
+            <p className="font-semibold text-(--black) name-area text-2xl md:text-3xl">I'm <span className="text-(--yellow)">Madeline Handoyo</span></p>
+        </div>
+            <p className="text-justify text-lg">
+            A developer who enjoys 
+            <span className="font-medium cursor-pointer hover:text-(--yellow) transition duration-200 ease-in-out text-(--black) "> creating beautiful</span>
+            , unique, and innovative software solutions that 
+            <span className="font-medium  cursor-pointer hover:text-(--yellow) transition duration-200 ease-in-out text-(--black)"> solve real-world problems.</span> 
+            Here, I'll be sharing some of the cool projects I've worked on! 
+          </p>
+        <div className="flex flex-col gap-4">
+             <p className="sub-header-text ">Let's Connect</p>
+             <Icon></Icon>
+        </div>
       </div>
+      
+      <div className="projects-container lg:w-[55%] lg:absolute lg:right-0 lg:top-0 lg:mr-[5%] lg:my-[5%]">
+          <p className="sub-header-text">Projects </p>
+          <Project link={"https://tapaknusa.up.railway.app/"} title={"Tapaknusa"} proglang={["Laravel","HTML","CSS","JQuery","MySQL"]}>
+            <p className="text-justify">An innovative <span className="font-medium text-(--black)">e-commerce platform that promotes attractions and festivals in Indonesia,</span> making it easy for people to discover and buy tickets for events that aren’t always available online. The goal is to raise awareness about Indonesia’s rich culture and vibrant attractions, allowing people to <span className="font-medium text-(--black)">experience and appreciate the beauty of local traditions and festivals.</span></p>
+          </Project>
+          <Project link={"https://tapaknusa.up.railway.app/"} title={"Tapaknusa"} proglang={["Laravel","HTML","CSS","JQuery","MySQL"]}>
+            <p className="text-justify">An innovative <span className="font-medium text-(--black)">e-commerce platform that promotes attractions and festivals in Indonesia,</span> making it easy for people to discover and buy tickets for events that aren’t always available online. The goal is to raise awareness about Indonesia’s rich culture and vibrant attractions, allowing people to <span className="font-medium text-(--black)">experience and appreciate the beauty of local traditions and festivals.</span></p>
+          </Project>
+          <Project link={"https://tapaknusa.up.railway.app/"} title={"Tapaknusa"} proglang={["Laravel","HTML","CSS","JQuery","MySQL"]}>
+            <p className="text-justify">An innovative <span className="font-medium text-(--black)">e-commerce platform that promotes attractions and festivals in Indonesia,</span> making it easy for people to discover and buy tickets for events that aren’t always available online. The goal is to raise awareness about Indonesia’s rich culture and vibrant attractions, allowing people to <span className="font-medium text-(--black)">experience and appreciate the beauty of local traditions and festivals.</span></p>
+          </Project>         
+      </div>
+    </div>
     
-    //<div  className="btn border xs:xs-container sm:sm-container md:md-container lg:lg-container xl:xl-container xl2:xl2-container xl3:xl3-container">Hello im madeline</div>
-
-
-  //     <div className='flex flex-col xs:min-h-[50vh] lg:max-w-[50vw] lg:w-[100vw]  lg:min-h-screen'>
-  //       <div className="xs:flex xs:flex-col lg:h-full lg:fixed mx-4 lg:right-0 lg:w-[100vw] text-justify xs:gap-8 md:gap-4 xs:py-25 xs:p-4 xs:pt-0 lg:pt-20 lg:p-20 lg:py-20 lg:pl-[45vw] justify-start items-start hide-scrollbar">
-  //         <p className="font-mono  xs:text-xl md:text-lg lg:text-lg xl:text-lg 2xl:text-xl   text-(--black)">Projects </p>
-  //         <Project link={"https://tapaknusa.up.railway.app/"} title={"Tapaknusa"} description={"An e-commerce platform that promotes attractions and festivals in Indonesia, making it easy for people to discover and buy tickets for events that aren’t always available online. The goal is to raise awareness about Indonesia’s rich culture and vibrant attractions."} proglang={["Laravel","HTML","CSS","JQuery","MySQL"]} />
-  //         <Project link={"https://tapaknusa.up.railway.app/"} title={"web2"} description={"An innovative e-commerce platform that promotes attractions and festivals in Indonesia, making it easy for people to discover and buy tickets for events that aren’t always available online. The goal is to raise awareness about Indonesia’s rich culture and vibrant attractions, allowing people to experience and appreciate the beauty of local traditions and festivals."} proglang={["Laravel","HTML","CSS","JQuery","MySQL"]} />
-  //         <Project link={"https://tapaknusa.up.railway.app/"} title={"web3"} description={"An innovative e-commerce platform that promotes attractions and festivals in Indonesia, making it easy for people to discover and buy tickets for events that aren’t always available online. The goal is to raise awareness about Indonesia’s rich culture and vibrant attractions, allowing people to experience and appreciate the beauty of local traditions and festivals."} proglang={["Laravel","HTML","CSS","JQuery","MySQL"]} />
-  //       </div>
-  //     </div>
-  // </div>
 
   );
 }
