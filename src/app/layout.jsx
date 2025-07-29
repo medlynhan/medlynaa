@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang="en">
-      <body className="fade-in-down">
+      <body className="fade-in-down md:text-base">
         
         {children}
       </body>

@@ -24,7 +24,7 @@
   body {
     @apply overflow-x-hidden scroll-smooth w-screen; /*base styling*/
     @apply flex flex-col justify-start items-start; /*flex*/
-    @apply text-base font-sans text-left; /*font*/
+    @apply text-sm font-sans text-left; /*font*/
 
 
   }
@@ -51,12 +51,12 @@
   }
 
   .sub-header-text{
-    @apply font-mono text-lg w-full text-left;
+    @apply font-mono text-base w-full text-left;
     color: var(--black);
   }
 
   .icon{
-    @apply text-3xl cursor-pointer font-semibold hover:text-(--yellow) transition duration-200 ease-in-out transition duration-200 ease-in-out ;
+    @apply text-2xl cursor-pointer font-semibold hover:text-(--yellow) transition duration-200 ease-in-out transition duration-200 ease-in-out ;
     color: var(--black);
   }
 
