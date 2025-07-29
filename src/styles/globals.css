@@ -16,6 +16,19 @@
   --breakpoint-2xl: 1400px; /*laptop 15 inch (my laptop)*/
   --breakpoint-3xl: 1600px; /*laptop 16 inch*/
 
+  --animate-wiggle: wiggle 1s ease-in-out 2;
+  
+  @keyframes wiggle {
+    0%, 100% {
+      transform: scale(1.0) rotate(-20deg); /* Gabungkan scale dan rotate dalam satu deklarasi */
+    }
+    50% {
+      transform: scale(1.15) rotate(5deg); /* Gabungkan scale dan rotate dalam satu deklarasi */
+    }
+  }
+
+
+
 
 }
 
@@ -37,6 +50,12 @@
 
 @layer components {
 
+  .hello-animation{
+    @apply animate-wiggle;
+    animation-delay: 1s;
+  }
+
+  
   .projects-container{
     @apply flex flex-col gap-10  p-10 w-full items-end z-0;
   }

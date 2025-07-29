@@ -12,7 +12,9 @@ export default function Home() {
       <div className="introduction-container lg:w-[35%] lg:absolute lg:left-0 lg:top-0 lg:fixed lg:ml-[5%] lg:my-[5%]">
         <div className="gap-2 grid-areas-layout">
             <ProfileImage></ProfileImage>
-            <p className="sub-header-text hello-area md:text-lg">Hello👋</p>
+            <div className=" hello-area flex flex-row items-start justify-start">
+              <p className=" font-mono text-base text-left md:text-lg">Hello </p><p className=" hello-animation">👋</p>
+            </div>
             <p className="font-semibold text-(--black) name-area text-2xl md:text-3xl">I'm <span className="text-(--yellow)">Madeline Handoyo</span></p>
         </div>
             <p className="text-justify xs:text-base md:text-lg">
