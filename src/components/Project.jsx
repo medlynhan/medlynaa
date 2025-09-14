@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import ProgLang from './ProgrammingLanguage';
 import Image from "next/image";
-export default function Project({title,children,proglang, link}) {
+export default function Project({title,children,proglang, link, imageLink,projectType, achievement,description}) {
   
   const [isHovered, setHover] = useState(false);
 
@@ -17,28 +17,36 @@ export default function Project({title,children,proglang, link}) {
           alt="Madeline Profile"
           width={250}
           height={100}
-          className="rounded-sm"
+          className="rounded-lg"
         />
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-yellow-500 opacity-0 group-hover:opacity-40 transition-opacity duration-300 rounded-sm"></div>
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-yellow-500 opacity-0 group-hover:opacity-40 transition-opacity duration-300 rounded-lg"></div>
       </div>
     );
   }
 
   return (
-    <div className='project hover:scale-102 hover:border-(--yellow) hover:shadow-md hover:shadow-(--yellow)' onMouseEnter={() => setHover(true)} onMouseLeave={ () => setHover(false)} onClick={() => goToProject()}>
+    <div className='text-gray-300 border-gray-700 project rounded-lg hover:scale-102 hover:border-(--yellow) transition duration-300 ease-in-out  hover:shadow-md hover:shadow-(--yellow)' onMouseEnter={() => setHover(true)} onMouseLeave={ () => setHover(false)} onClick={() => goToProject()}>
         
-        <p className={`font-mono font-medium text-lg ${isHovered ? 'text-(--yellow)' : 'text-(--black)'}`}>{title} ↗</p>
+        <div className='flex gap-2   items-center '>
+          <p className={`font-mono font-medium text-lg  ${isHovered ? 'text-(--yellow)' : 'text-(--black)'}`}>{title} </p>
+          <p className={` ${isHovered ? 'text-(--yellow) -translate-y-1 '  : 'text-(--black)'}`}>↗</p>
+        </div>
         
-        <div className='flex flex-col justify-center items-center gap-6 md:flex-row '>
-          <div  className="bg-(--white) rounded-sm md:min-w-[15em]">
-            <Image src="/tapaknusa.png" alt="Madeline Profile" width={250} height={100} className={`rounded-sm ${isHovered ? 'opacity-75' : 'opacity-100'}`} />
+        
+        <div className='flex flex-col justify-center items-center gap-6 lg:flex-row '>
+          <div  className="bg-(--white) rounded-lg lg:min-w-[15em]">
+            <Image src={imageLink} alt="Madeline Profile" width={250} height={100} className={`rounded-lg ${isHovered ? 'opacity-75' : 'opacity-100'}`} />
           </div>
-          {children }
+          <div className='flex gap-4 flex-col text-justify'>
+            {achievement && (<div className='text-sm font-semibold'>{achievement}</div>)}
+            <div className='text-sm font-semibold'>{projectType}</div>
+            <div>{description}</div>
+          </div>
         </div>
 
         
 
-        <div className='grid grid-cols-[repeat(auto-fit,_minmax(5em,_1fr))] gap-4 justify-start items-start'>
+        <div className='flex flex-wrap gap-4   justify-start items-start'>
            {proglang.map((languange,index)=>(
               <ProgLang key={index} lang={languange} isHovered={isHovered}/>
            ))}
