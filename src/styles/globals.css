@@ -150,5 +150,22 @@
     animation: fadeInDown 3s ease-in-out; 
   }
 
+  @keyframes rollFromBottom {
+  0% {
+    transform: translateY(50px) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+
+  /* Kelas untuk animasi */
+  .rollFromBottom {
+    animation: rollFromBottom 1s ease-out forwards;
+  }
+
 
 }

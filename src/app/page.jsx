@@ -5,11 +5,15 @@ import Icon from "../components/Icon";
 import Toogle from "../components/Toogle";
 import ProfileImage from "../components/ProfileImage";
 import { DiVim } from "react-icons/di";
-import { useState, useRef , useEffect} from "react";
+import { useState, useRef , useEffect, } from "react";
+import { useRouter } from 'next/navigation';
 import { motion } from "framer-motion";
 import { IoCaretForwardOutline } from "react-icons/io5";
 
+
 export default function Home() {
+
+  const router = useRouter();
 
   const [aboutclicked,SetAboutClicked] = useState(false);
   const [teamclicked,SetTeamClicked] = useState(false);
@@ -91,9 +95,9 @@ useEffect(() => {
             </div>
             <div className="w-full h-full  flex flex-col gap-2">
               <p className=" font-mono  text-left lg:text-base  font-semibold text-(--yellow)">Hello 👋</p>
-              <p className="font-semibold text-(--black) name-area text-2xl ">I'm <span className="">Madeline Handoyo</span></p>
+              <p className="font-semibold text-(--black) name-area text-lg md:text-2xl ">I'm <span className="">Madeline Handoyo</span></p>
               <div className=" w-fit flex  ">
-                  <p className="font-semibold text-gray-300 name-area text-base text-start w-full text-lg">Aspiring Software Engineer</p>
+                  <p className="font-semibold text-gray-300 text-sm text-start w-full md:text-lg">Aspiring Software Engineer</p>
               </div>
               <div className="flex pt-2 flex lg:hidden justify-between items-center border-t-1 border-gray-700">
                 <Icon></Icon>
@@ -132,19 +136,20 @@ useEffect(() => {
         <div ref={aboutRef} className="flex flex-col gap-6 lg:min-h-[90vh] py-10 ">
             <p className="sub-header-text lg:text-lg font-semibold ">About Me</p>
             <p className="text-justify">
-              Hey, I’m Madeline, a Computer Science student at BINUS University. <span className="text-(--black) font-semibold hover:text-(--yellow) cursor-pointer">I love exploring different areas across the fullstack</span>, from backend logic with Node.js and Laravel to frontend design with React, Next.js, and TailwindCSS. Besides studying, sometimes I also take on freelance projects !
+              Hey, I’m Madeline, a Computer Science student at BINUS University. <span className=" font-semibold text-(--yellow) cursor-pointer">I love exploring different areas across the fullstack</span>, from backend logic with Node.js and Laravel to frontend design with React, Next.js, and TailwindCSS. Besides studying, sometimes I also take on freelance projects !
             </p>
             <p className="text-justify">
-              I enjoy building digital products end-to-end, but I especially find myself <span className="text-(--black) font-semibold hover:text-(--yellow) cursor-pointer">drawn to the frontend</span> — where I get to turn ideas into beautiful and interactive experiences. 
+              I enjoy building digital products end-to-end, but I especially find myself <span className=" text-(--black) font-semibold hover:text-(--yellow) cursor-pointer">drawn to the frontend</span> — where I get to turn ideas into beautiful and interactive experiences. 
             </p>
             <p className="text-justify">
-              Here, I’ll show you some of my work from <span className=" text-(--black) font-semibold hover:text-(--yellow) cursor-pointer">competitions, team projects, and personal explorations.</span> I’m also active on <span className=" text-(--black) font-semibold hover:text-(--yellow) cursor-pointer">GitHub</span>, where I regularly share updates and new projects — feel free to check it out and follow along on my journey! ✨🚀
+              Here, I’ll show you some of my work from <span className=" text-(--black) font-semibold  hover:text-(--yellow)  cursor-pointer">competitions, team projects, and personal explorations.</span> I’m also active on <span className=" font-semibold text-(--yellow) cursor-pointer "><a target="_blank" rel="noopener noreferrer" href="https://github.com/medlynhan">GitHub</a></span>, where I regularly share updates and new projects — feel free to check it out and follow along on my journey! ✨🚀
             </p>
         </div> 
           
         <div ref={teamRef} className="flex flex-col gap-6 lg:min-h-[90vh] py-10">
             <p className="sub-header-text lg:text-lg font-semibold ">Team Projects</p>
             <Project 
+                onClick={() => router.push("/detailProject?name=Leluri")} 
                 link={"https://leluri.vercel.app/"} 
                 title={"Leluri"} 
                 projectType={" 👩‍💻 Web Dev Competition IITC — 2025"} 
@@ -157,6 +162,7 @@ useEffect(() => {
         <div ref={individualRef} className="flex flex-col gap-6  lg:min-h-[90vh] py-10">
             <p className="sub-header-text lg:text-lg font-semibold ">Individual Projects</p>
             <Project 
+                onClick={() => router.push("/detailProject?name=Tapaknusa")} 
                 link={"https://tapaknusa.up.railway.app/"} 
                 title={"Tapaknusa"} 
                 achievement={"🏆 Achieved 6th Place Winner"}
@@ -168,6 +174,7 @@ useEffect(() => {
 
 
             <Project 
+                onClick={() => router.push("/detailProject?name=Irrigo")} 
                 link={" - "} 
                 title={"Irrigo"} 
                 projectType={" 👩‍💻 Web Dev Competition SECOMP — 2025"} 
@@ -181,6 +188,7 @@ useEffect(() => {
 
 
       </div>
+      
     </div>
     
 

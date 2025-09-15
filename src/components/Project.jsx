@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import ProgLang from './ProgrammingLanguage';
 import Image from "next/image";
-export default function Project({title,children,proglang, link, imageLink,projectType, achievement,description}) {
+import { BsArrowUpRight } from "react-icons/bs";
+
+export default function Project({title,proglang, link, imageLink,projectType, achievement,description, onClick}) {
   
   const [isHovered, setHover] = useState(false);
 
@@ -25,11 +27,11 @@ export default function Project({title,children,proglang, link, imageLink,projec
   }
 
   return (
-    <div className='text-gray-300 border-gray-700 project rounded-lg hover:scale-102 hover:border-(--yellow) transition duration-300 ease-in-out  hover:shadow-md hover:shadow-(--yellow)' onMouseEnter={() => setHover(true)} onMouseLeave={ () => setHover(false)} onClick={() => goToProject()}>
+    <div className='text-gray-300 border-gray-700 project rounded-lg hover:scale-102 hover:border-(--yellow) transition duration-300 ease-in-out  hover:shadow-md hover:shadow-(--yellow)' onMouseEnter={() => setHover(true)} onMouseLeave={ () => setHover(false)} onClick={onClick}>
         
         <div className='flex gap-2   items-center '>
           <p className={`font-mono font-medium text-lg  ${isHovered ? 'text-(--yellow)' : 'text-(--black)'}`}>{title} </p>
-          <p className={` ${isHovered ? 'text-(--yellow) -translate-y-1 '  : 'text-(--black)'}`}>↗</p>
+          <p className={` ${isHovered ? 'text-(--yellow) -translate-y-1 '  : 'text-(--black)'}`}><BsArrowUpRight/></p>
         </div>
         
         
@@ -48,7 +50,7 @@ export default function Project({title,children,proglang, link, imageLink,projec
 
         <div className='flex flex-wrap gap-4   justify-start items-start'>
            {proglang.map((languange,index)=>(
-              <ProgLang key={index} lang={languange} isHovered={isHovered}/>
+              <ProgLang key={index} lang={languange} isHovered={isHovered} style={"text-(--yellow)"}/>
            ))}
         </div> 
 
