@@ -149,7 +149,7 @@ useEffect(() => {
         <div ref={teamRef} className="flex flex-col gap-6 lg:min-h-[90vh] py-10">
             <p className="sub-header-text lg:text-lg font-semibold ">Team Projects</p>
             <Project 
-                onClick={() => router.push("/detailProject?name=Leluri")} 
+                onClick={() => router.push("/detailProject/Leluri")} 
                 link={"https://leluri.vercel.app/"} 
                 title={"Leluri"} 
                 projectType={" 👩‍💻 Web Dev Competition IITC — 2025"} 
@@ -162,7 +162,7 @@ useEffect(() => {
         <div ref={individualRef} className="flex flex-col gap-6  lg:min-h-[90vh] py-10">
             <p className="sub-header-text lg:text-lg font-semibold ">Individual Projects</p>
             <Project 
-                onClick={() => router.push("/detailProject?name=Tapaknusa")} 
+                onClick={() => router.push("/detailProject/Tapaknusa")} 
                 link={"https://tapaknusa.up.railway.app/"} 
                 title={"Tapaknusa"} 
                 achievement={"🏆 Achieved 6th Place Winner"}
@@ -174,7 +174,7 @@ useEffect(() => {
 
 
             <Project 
-                onClick={() => router.push("/detailProject?name=Irrigo")} 
+                onClick={() => router.push("/detailProject/Irrigo")} 
                 link={" - "} 
                 title={"Irrigo"} 
                 projectType={" 👩‍💻 Web Dev Competition SECOMP — 2025"} 

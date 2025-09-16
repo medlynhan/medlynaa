@@ -1,20 +1,27 @@
 'use client'
 import React from 'react'
-import { useRouter, useSearchParams, Suspense  } from 'next/navigation';
+import {useParams, useRouter, useSearchParams, Suspense  } from 'next/navigation';
 import { useState, useRef , useEffect, } from "react";
 import ProgLang from '../../../components/ProgrammingLanguage';
 import { IoIosLink } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { MdMovie } from "react-icons/md";
 import { IoCloseCircleSharp } from "react-icons/io5";
-import ImageCarousel from '../../../components/imageCarousel';
+import ImageCarousel from '../../../components/ImageCarousell';
 import { projectData } from '../../../data/projects';
 
 export default function page() {
     
   const router = useRouter();
-  const { ProjectName } = router.query;
+  const { ProjectName } = useParams();
+
+
+  if (!ProjectName) {
+    return <div className='w-screen h-screen flex justify-center items-center'>Loading...</div>;
+  }
+
   const project = projectData[ProjectName];
+
 
   if (!project) {
     return <div className='w-screen h-screen flex justify-center items-center'>Loading...</div>;
