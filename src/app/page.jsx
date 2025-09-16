@@ -142,7 +142,7 @@ useEffect(() => {
               I enjoy building digital products end-to-end, but I especially find myself <span className=" text-(--black) font-semibold hover:text-(--yellow) cursor-pointer">drawn to the frontend</span> — where I get to turn ideas into beautiful and interactive experiences. 
             </p>
             <p className="text-justify">
-              Here, I’ll show you some of my work from <span className=" text-(--black) font-semibold  hover:text-(--yellow)  cursor-pointer">competitions, team projects, and personal explorations.</span> I’m also active on <span className=" font-semibold text-(--yellow) cursor-pointer "><a target="_blank" rel="noopener noreferrer" href="https://github.com/medlynhan">GitHub</a></span>, where I regularly share updates and new projects — feel free to check it out and follow along on my journey! ✨🚀
+              Here, I’ll show you some of my work from <span className=" text-(--black) font-semibold text-(--black) hover:text-(--yellow)  cursor-pointer">competitions, team projects, and personal explorations.</span> I’m also active on <span className=" font-semibold  hover:text-(--yellow) cursor-pointer "><a target="_blank" rel="noopener noreferrer" href="https://github.com/medlynhan">GitHub</a></span>, where I regularly share updates and new projects — feel free to check it out and follow along on my journey! ✨🚀
             </p>
         </div> 
           
