@@ -2,13 +2,13 @@
 import React from 'react'
 import {useParams, useRouter, useSearchParams, Suspense  } from 'next/navigation';
 import { useState, useRef , useEffect, } from "react";
-import ProgLang from '../../../components/ProgrammingLanguage';
+import ProgLang from '../../components/ProgrammingLanguage';
 import { IoIosLink } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { MdMovie } from "react-icons/md";
 import { IoCloseCircleSharp } from "react-icons/io5";
-import ImageCarousel from '../../../components/ImageCarousell';
-import { projectData } from '../../../data/projects';
+import ImageCarousel from '../../components/ImageCarousell';
+import { projectData } from '../../data/projects';
 
 export default function page() {
     
