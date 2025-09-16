@@ -48,9 +48,9 @@ export default function page() {
           <div className="w-full lg:w-1/2 flex flex-col justify-between gap-4 ">
             <div className='flex flex-col mb-2 pb-2 border-b-1 border-gray-700'>
             <div className='mb-2 md:flex hidden  flex-row gap-4 items-center'>
-              <a  target="_blank" href={`${project.liveUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><span><IoIosLink /></span> View Live Project</p></a>
-              <a  target="_blank" href={`${project.githubUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><FaGithub />GitHub</p></a>
-              <a  target="_blank" href={`${project.videoUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><MdMovie />Demo Video</p></a>
+              {project.liveUrl && (<a  target="_blank" href={`${project.liveUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><span><IoIosLink /></span> View Live Project</p></a>)}
+              {project.githubUrl && (<a  target="_blank" href={`${project.githubUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><FaGithub />GitHub</p></a>)}
+              {project.videoUrl && (<a  target="_blank" href={`${project.videoUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><MdMovie />Demo Video</p></a>)}
             </div>
               <p className="font-semibold  name-area text-lg sm:text-xl md:text-3xl text-(--black)" >{project.name} </p>
               <p className=" md:text-lg font-semibold text-(--yellow)">{project.description}</p>
@@ -101,9 +101,9 @@ export default function page() {
                 </div>
         </div>
         <div className='p-8 flex flex-col sm:flex-row md:hidden justify-start items-start gap-4 mb-10'>
-              <a  target="_blank" href={`${project.liveUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><span><IoIosLink /></span> View Live Project</p></a>
-              <a  target="_blank" href={`${project.githubUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><FaGithub />GitHub</p></a>
-              <a  target="_blank" href={`${project.videoUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><MdMovie />Demo Video</p></a>
+              {project.liveUrl && (<a  target="_blank" href={`${project.liveUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer text-(--yellow)'><span><IoIosLink /></span> View Live Project</p></a>)}
+              {project.githubUrl && (<a  target="_blank" href={`${project.githubUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer text-(--yellow)'><FaGithub />GitHub</p></a>)}
+              {project.videoUrl && (<a  target="_blank" href={`${project.videoUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer text-(--yellow)'><MdMovie />Demo Video</p></a>)}
         </div>
 
 </div>

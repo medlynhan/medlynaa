@@ -22,6 +22,7 @@
 
   --animate-wiggle: wiggle 1s ease-in-out 2;
   
+  --text-xs : 0.8rem;
   --font-mono : Nunito Sans, sans-serif;
 
   @keyframes wiggle {
