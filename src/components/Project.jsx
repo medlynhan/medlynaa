@@ -48,7 +48,7 @@ export default function Project({title,proglang, link, imageLink,projectType, ac
 
         
 
-        <div className='flex flex-wrap gap-4   justify-start items-start'>
+        <div className='hidden flex-wrap gap-4  justify-start items-start md:flex'>
            {proglang.map((languange,index)=>(
               <ProgLang key={index} lang={languange} isHovered={isHovered} style={"text-(--yellow)"}/>
            ))}

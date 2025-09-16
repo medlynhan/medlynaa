@@ -28,7 +28,7 @@ export default function page() {
   }
 
     return (
-      <div className="px-10 ">
+      <div className="md:px-10 max-w-screen">
         {/* Back Button */}
         <div className="mb-8">
           <button
@@ -41,18 +41,19 @@ export default function page() {
 
 
         {/* kolom 1 */}
-        <div className="flex flex-col lg:flex-row gap-10 p-8 w-full items-start lg:pt-20 ">
-          <ImageCarousel images={project.images}></ImageCarousel>
-
-          <div className="w-full lg:w-1/2 flex flex-col justify-between gap-4">
+        <div className="flex flex-col lg:flex-row items-stretch gap-10 p-8 w-full h-full lg:pt-20 ">
+          <div className='w-full lg:w-1/2 flex flex-col justify-center items-center gap-4  h-full '>
+            <ImageCarousel images={project.images}></ImageCarousel>
+          </div>
+          <div className="w-full lg:w-1/2 flex flex-col justify-between gap-4 ">
             <div className='flex flex-col mb-2 pb-2 border-b-1 border-gray-700'>
-            <div className='mb-2 flex flex-row gap-4 items-center'>
+            <div className='mb-2 md:flex hidden  flex-row gap-4 items-center'>
               <a  target="_blank" href={`${project.liveUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><span><IoIosLink /></span> View Live Project</p></a>
               <a  target="_blank" href={`${project.githubUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><FaGithub />GitHub</p></a>
               <a  target="_blank" href={`${project.videoUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><MdMovie />Demo Video</p></a>
             </div>
-              <p className="font-semibold  name-area text-xl md:text-3xl text-(--black)" >{project.name} </p>
-              <p className="text-sm md:text-lg font-semibold text-(--yellow)">{project.description}</p>
+              <p className="font-semibold  name-area text-lg sm:text-xl md:text-3xl text-(--black)" >{project.name} </p>
+              <p className=" md:text-lg font-semibold text-(--yellow)">{project.description}</p>
             </div>          
             <div className='flex flex-col '>
               <p className=" font-semibold text-(--black)">💻 Project Type:</p>
@@ -70,7 +71,7 @@ export default function page() {
               <p className=" font-semibold text-(--black)">⚒️ Tech Stack:</p>
               <div className='flex flex-wrap gap-4   justify-start items-start'>
                 {project.techStack.map((languange,index)=>(
-                  <ProgLang key={index} lang={languange} style={"text-yellow-500 border-yellow-500"}/>
+                  <ProgLang key={index} lang={languange} style={"text-yellow-500 border-yellow-500 "}/>
                 ))}
               </div>
             </div>
@@ -84,8 +85,6 @@ export default function page() {
 
         {/* kolom 2 */}
         <div className="flex flex-col md:flex-row h-full  gap-10 p-8 w-full items-start lg:py-20 pb-10  ">
-          
-        
                 {/*challenge */}
                 <div className='flex flex-col gap-2'>
                   <h3 className="font-semibold  name-area text-base md:text-xl text-(--black) ">Challenge:</h3>
@@ -100,6 +99,11 @@ export default function page() {
                         {project.solution}
                   </p>
                 </div>
+        </div>
+        <div className='p-8 flex flex-col sm:flex-row md:hidden justify-start items-start gap-4 mb-10'>
+              <a  target="_blank" href={`${project.liveUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><span><IoIosLink /></span> View Live Project</p></a>
+              <a  target="_blank" href={`${project.githubUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><FaGithub />GitHub</p></a>
+              <a  target="_blank" href={`${project.videoUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-(--yellow)'><MdMovie />Demo Video</p></a>
         </div>
 
 </div>

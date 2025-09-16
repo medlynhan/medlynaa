@@ -16,7 +16,7 @@ export default function ImageCarousel({images}) {
     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
   return (
-    <div className="relative w-full lg:w-1/2">
+    <div className="relative w-full object-cover  h-full">
         <img
           src={images[currentImageIndex]}
           alt={`Project Screenshot ${currentImageIndex + 1}`}
@@ -24,11 +24,11 @@ export default function ImageCarousel({images}) {
         />
         <button
           onClick={handleNext}
-          className="absolute text-2xl text-gray-500 hover:text-gray-300 right-[-2] top-1/2 transform -translate-y-1/2  "
+          className="absolute text-lg sm:text-2xl text-gray-500 hover:text-gray-300 right-[-12] md:right-[-2] top-1/2 transform -translate-y-1/2  "
         ><FaArrowAltCircleRight /></button>
         <button
           onClick={handlePrev}
-          className="absolute text-2xl text-gray-500 hover:text-gray-300 left-[-2] top-1/2 transform -translate-y-1/2  "
+          className="absolute  text-lg sm:text-2xl text-gray-500 hover:text-gray-300  left-[-12] md:left-[-2] top-1/2 transform -translate-y-1/2  "
         ><FaArrowAltCircleLeft /></button>
     </div>
   )
