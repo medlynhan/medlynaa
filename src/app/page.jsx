@@ -152,7 +152,7 @@ useEffect(() => {
                 onClick={() => router.push("/detailProject/Leluri")} 
                 link={"https://leluri.vercel.app/"} 
                 title={"Leluri"} 
-                projectType={" 👩‍💻 Web Dev Competition IITC — 2025"} 
+                projectType={"Digital Cultural Community Platform"} 
                 proglang={["Next.js","Typescript","React","Tailwind CSS","ShadCN UI","Supabase","Vercel"]} 
                 imageLink="/leluri.png"
                 description={"Digital community platform that connects artisans, studios, and culture enthusiasts to keep Indonesian culture alive and collaborative in the digital era."}    
@@ -165,8 +165,8 @@ useEffect(() => {
                 onClick={() => router.push("/detailProject/Tapaknusa")} 
                 link={"https://tapaknusa.up.railway.app/"} 
                 title={"Tapaknusa"} 
-                achievement={"🏆 Achieved 6th Place Winner"}
-                projectType={" 👩‍💻 Web Design Competition PARAS ICT X — 2025"} 
+                // achievement={"🏆 Achieved 6th Place Winner"}
+                projectType={"Explore Hidden Indonesian Heritage"} 
                 proglang={["Laravel","HTML","CSS","JQuery","MySQL","Railway"]}
                 imageLink="/tapaknusa.png"
                 description={"Responsive web platform that lets users effortlessly discover and book hidden Indonesian cultural attractions online."}    
@@ -177,7 +177,7 @@ useEffect(() => {
                 onClick={() => router.push("/detailProject/Irrigo")} 
                 link={" - "} 
                 title={"Irrigo"} 
-                projectType={" 👩‍💻 Web Dev Competition SECOMP — 2025"} 
+                projectType={"Irrigation Recommendation System"} 
                 proglang={["Next.js","Node.js","Flask","Python","Random Forest","Mapbox API","OpenWeatherAPI","EOSDA API","Docker"]}
                 imageLink="/irrigo.png"
                 description={"Smart web app that predicts farmer's irrigation needs using AI, giving affordable and practical water guidance for rice crops."}    

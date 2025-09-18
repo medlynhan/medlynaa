@@ -24,11 +24,11 @@ export default function ImageCarousel({images}) {
         />
         <button
           onClick={handleNext}
-          className="absolute text-lg sm:text-2xl text-gray-500 hover:text-gray-300 right-[-12] md:right-[-2] top-1/2 transform -translate-y-1/2  "
+          className="absolute text-lg sm:text-2xl text-gray-500 hover:text-gray-300 right-[-12] md:right-[-2] top-1/2 transform -translate-y-1/2  cursor-pointer"
         ><FaArrowAltCircleRight /></button>
         <button
           onClick={handlePrev}
-          className="absolute  text-lg sm:text-2xl text-gray-500 hover:text-gray-300  left-[-12] md:left-[-2] top-1/2 transform -translate-y-1/2  "
+          className="absolute  text-lg sm:text-2xl text-gray-500 hover:text-gray-300  left-[-12] md:left-[-2] top-1/2 transform -translate-y-1/2 cursor-pointer "
         ><FaArrowAltCircleLeft /></button>
     </div>
   )

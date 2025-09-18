@@ -32,7 +32,7 @@ export default function page() {
         {/* Back Button */}
         <div className="mb-8">
           <button
-            className="font-semibold text-2xl md:text-4xl fixed top-5 right-5 text-gray-500 hover:text-gray-300"
+            className="font-semibold text-2xl md:text-4xl fixed top-5 right-5 text-gray-500 hover:text-gray-300 cursor-pointer"
             onClick={() => router.back()}
           >
             <IoCloseCircleSharp />
@@ -71,7 +71,7 @@ export default function page() {
               <p className=" font-semibold text-(--black)">⚒️ Tech Stack:</p>
               <div className='flex flex-wrap gap-4   justify-start items-start'>
                 {project.techStack.map((languange,index)=>(
-                  <ProgLang key={index} lang={languange} style={"text-yellow-500 border-yellow-500 "}/>
+                  <ProgLang key={index} lang={languange} style={"text-yellow-500 border-yellow-500"}/>
                 ))}
               </div>
             </div>
@@ -86,14 +86,14 @@ export default function page() {
         {/* kolom 2 */}
         <div className="flex flex-col md:flex-row h-full  gap-10 p-8 w-full items-start lg:py-20 pb-10  ">
                 {/*challenge */}
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 lg:w-1/2'>
                   <h3 className="font-semibold  name-area text-base md:text-xl text-(--black) ">Challenge:</h3>
                   <p className="text-gray-300 text-justify">
                         {project.challenge}
                   </p>
                 </div>
                 {/*solution */}
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 lg:w-1/2'>
                   <h3 className="font-semibold  name-area text-base md:text-xl text-(--black) ">Solution:</h3>
                   <p className="text-gray-300 text-justify">
                         {project.solution}

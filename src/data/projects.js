@@ -9,7 +9,7 @@ export const projectData = {
     year: '2025',
     techStack: ["Next.js", "Typescript", "React", "Tailwind CSS", "ShadCN UI", "Supabase", "Vercel"],
     challenge: "Many cultural projects in Indonesia only focus on 'introducing' culture to young generations, but they rarely create something sustainable that can truly be passed on.",
-    solution: "That’s why we built Leluri as a digital cultural community platform. Here, artisans, studios, young people, and culture lovers can talk, learn, collaborate, and even build a marketplace.",
+    solution: "Leluri was developed as a digital cultural community platform, providing a space for artisans, studios, young people, and culture lovers to connect, learn, collaborate, and even create a marketplace. Cultural heritage cannot be preserved by study alone—it must remain a shared and continuous conversation.",
     images: [
       "/leluri.png",
       "/leluri 2.png",
@@ -52,7 +52,7 @@ export const projectData = {
     year: '2025',
     techStack: ["Next.js","Node.js","Flask","Python","Random Forest","Mapbox API","OpenWeatherAPI","EOSDA API","Docker"],
     challenge: "Many small farmers in Indonesia can’t afford modern irrigation systems like drip irrigation, which makes it hard to manage water effectively. This leaves them at a disadvantage compared to larger farms.",
-    solution: "We built Irrigo, a web app that gives farmers affordable irrigation guidance. Using soil moisture and local weather data, combined with a Random Forest AI model, it predicts water needs for the next five days. The app turns complex data into simple advice, helping farmers save water and grow better crops.",
+    solution: "Irrigo is a web app that provides farmers with affordable irrigation guidance. By using soil moisture and local weather data combined with a Random Forest AI model, it predicts water needs for the next five days. The app simplifies complex data into clear advice, helping farmers save water and grow healthier crops.",
     images: [
       "/irrigo.png",
       "/irrigo 2.png",
