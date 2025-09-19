@@ -1,5 +1,7 @@
 /* Nunito Sans */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 
 @import "tailwindcss";
 
@@ -23,7 +25,7 @@
   --animate-wiggle: wiggle 1s ease-in-out 2;
   
   --text-xs : 0.8rem;
-  --font-mono : Nunito Sans, sans-serif;
+  --font-mono :  sans-serif;
 
   @keyframes wiggle {
     0%, 100% {
