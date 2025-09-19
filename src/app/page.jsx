@@ -88,7 +88,7 @@ useEffect(() => {
   return (
     <div >
       {/*kolom kiri */}
-      <div className="lg:min-h-[80vh] introduction-container lg:w-[35%] lg:absolute lg:left-0 lg:top-0 lg:fixed lg:ml-[5%] lg:my-[5%]">
+      <div className="lg:min-h-[80vh] introduction-container lg:w-[35%] lg:absolute lg:left-0 lg:top-0 lg:fixed lg:ml-[5%] lg:my-[5%] ">
         <div className="gap-4   w-full flex  flex-row h-full">
             <div className="flex justify-center items-center w-fit">
               <ProfileImage></ProfileImage>
@@ -97,7 +97,7 @@ useEffect(() => {
               <p className=" font-mono text-left lg:text-base  font-semibold text-(--yellow)">Hello 👋</p>
               <p className="font-semibold text-(--black) name-area text-sm sm:text-lg md:text-2xl ">I'm <span className="">Madeline Handoyo</span></p>
               <div className=" w-fit flex  ">
-                  <p className="font-semibold text-gray-300  text-start w-full md:text-lg">Aspiring Software Engineer</p>
+                  <p className="font-semibold text-gray-300  text-start w-full md:text-lg">Aspiring Fullstack Developer</p>
               </div>
               <div className="flex pt-2 flex lg:hidden justify-between items-center border-t-1 border-gray-700">
                 <Icon></Icon>
@@ -131,9 +131,9 @@ useEffect(() => {
       </div>
       
       {/*kolom kanan */}
-      <div className="projects-container lg:w-[55%] lg:absolute lg:right-0 lg:top-0 lg:mr-[5%] lg:my-[5%] text-gray-200">
+      <div className="projects-container lg:w-[55%] lg:absolute lg:right-0 lg:top-0  pb-20 text-gray-200 lg:mr-[5%] ">
       
-        <div ref={aboutRef} className="flex flex-col gap-6 lg:min-h-[90vh] py-10 ">
+        <div ref={aboutRef} className="flex flex-col gap-6 pt-20 ">
             <p className="sub-header-text lg:text-lg font-semibold ">About Me</p>
             <p className="text-justify">
               Hey, I’m Madeline, a Computer Science student at BINUS University. <span className=" font-semibold text-(--yellow) cursor-pointer">I love exploring different areas across the fullstack</span>, from backend logic with Node.js and Laravel to frontend design with React, Next.js, and TailwindCSS. Besides studying, sometimes I also take on freelance projects !
@@ -146,7 +146,7 @@ useEffect(() => {
             </p>
         </div> 
           
-        <div ref={teamRef} className="flex flex-col gap-6 lg:min-h-[90vh] py-10">
+        <div ref={teamRef} className="flex flex-col gap-6  pt-20  ">
             <p className="sub-header-text  lg:text-lg font-semibold ">Team Projects</p>
             <Project 
                 onClick={() => router.push("/detailProject/Leluri")} 
@@ -159,7 +159,7 @@ useEffect(() => {
             />
         </div>
           
-        <div ref={individualRef} className="flex flex-col gap-6  lg:min-h-[90vh] py-10">
+        <div ref={individualRef} className="flex flex-col gap-6   pt-20 ">
             <p className="sub-header-text lg:text-lg font-semibold ">Individual Projects</p>
             <Project 
                 onClick={() => router.push("/detailProject/Tapaknusa")} 

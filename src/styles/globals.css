@@ -64,7 +64,7 @@
 
   
   .projects-container{
-    @apply flex flex-col gap-10 px-8 w-full items-end z-0;
+    @apply flex flex-col gap-10 px-8 w-full items-end z-0 ;
   }
 
   .introduction-container{
