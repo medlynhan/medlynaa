@@ -27,22 +27,22 @@ export default function Project({title,proglang, link, imageLink,projectType, ac
   }
 
   return (
-    <div className='text-gray-300 border-gray-700 project rounded-lg hover:scale-102 hover:border-(--yellow) transition duration-300 ease-in-out  hover:shadow-md hover:shadow-(--yellow)' onMouseEnter={() => setHover(true)} onMouseLeave={ () => setHover(false)} onClick={onClick}>
+    <div className='text-gray-300 border-gray-700 project  hover:bg-gray-800/20  rounded-lg hover:scale-102  transition duration-300 ease-in-out  hover:shadow-md hover:shadow-(--yellow)' onMouseEnter={() => setHover(true)} onMouseLeave={ () => setHover(false)} onClick={onClick}>
         
         <div className='flex gap-2   items-center '>
-          <p className={`font-mono font-medium text-lg  ${isHovered ? 'text-(--yellow)' : 'text-(--black)'}`}>{title} </p>
+          <p className={`font-mono font-semibold text-base  ${isHovered ? 'text-(--yellow)' : 'text-(--black)'}`}>{title} </p>
           <p className={` ${isHovered ? 'text-(--yellow) -translate-y-1 '  : 'text-(--black)'}`}><BsArrowUpRight/></p>
         </div>
         
         
         <div className='flex flex-col justify-center items-center gap-6 lg:flex-row '>
-          <div  className="bg-(--white) rounded-lg lg:min-w-[15em]">
-            <Image src={imageLink} alt="Madeline Profile" width={250} height={100} className={`rounded-lg ${isHovered ? 'opacity-75' : 'opacity-100'}`} />
+          <div  className=" rounded-lg lg:min-w-[15em]">
+            <Image src={imageLink} alt="Madeline Profile" width={250} height={100} className={`rounded-lg ${isHovered ? 'opacity-100' : 'opacity-100'}`} />
           </div>
           <div className='flex gap-4 flex-col text-justify'>
             {achievement && (<div className='text-sm font-semibold'>{achievement}</div>)}
             <div className='text-sm font-semibold'>{projectType}</div>
-            <div>{description}</div>
+            <div className='text-sm'>{description}</div>
           </div>
         </div>
 

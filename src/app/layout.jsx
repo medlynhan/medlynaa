@@ -1,15 +1,35 @@
+'use client';
+import { useState, useRef , useEffect, } from "react";
 import "../styles/globals.css";
+import { motion } from "framer-motion";
 
-export const metadata = {
-  title: "Medlynhan",
-  description: "Software Engineer",
-};
 
 export default function RootLayout({children}) {
+
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (event) => {
+    setPosition({
+      x: event.pageX,
+      y: event.pageY,
+    });
+  };
+
   return (
     <html lang="en">
-      <body className="text-xs sm:text-sm lg:text-base text-gray-300">
-        
+      <body className="relative text-xs sm:text-sm lg:text-base text-gray-300 " onMouseMove={handleMouseMove}>
+          <motion.div
+            className="absolute w-50 h-50 rounded-full pointer-events-none"
+            style={{
+              top: position.y - 100 + "px",
+              left: position.x - 100 + "px", // Agar cursor berada di tengah
+              backgroundColor: "rgba(42, 68, 114, 0.5)", 
+              boxShadow: "0 0 50vw rgba(78, 125, 207, 1)",
+              filter: "blur(10vw)",
+            }}
+            animate={{ scale: [1, 1.2, 1] }} // Efek animasi scaling
+            transition={{ duration: 0.2 }}
+          />
         {children}
       </body>
     </html>

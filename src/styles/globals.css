@@ -7,9 +7,9 @@
 
 :root {
   --gray: #d9d9d9ff;
-  --white: #12171a;
+  --white: #0e161d;
   --black: #fdfcfc;
-  --yellow: #ffb73e;
+  --yellow: rgb(255, 183, 62);
   --black-yellow : #4a3c21;
 }
 
