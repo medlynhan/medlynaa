@@ -19,7 +19,7 @@ export default function RootLayout({children}) {
     <html lang="en">
       <body className="relative text-xs sm:text-sm lg:text-base text-gray-300 " onMouseMove={handleMouseMove}>
           <motion.div
-            className="absolute w-50 h-50 rounded-full pointer-events-none"
+            className="absolute w-50 h-50 rounded-full pointer-events-none lg:flex hidden"
             style={{
               top: position.y - 100 + "px",
               left: position.x - 100 + "px", // Agar cursor berada di tengah
