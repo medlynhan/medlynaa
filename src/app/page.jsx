@@ -173,7 +173,7 @@ useEffect(() => {
             <div className="flex flex-col items-center border  border-gray-700  p-4 rounded-lg">
               <div className="flex w-full flex-row gap-2 mb-4 items-center justify-center ">
                 <IoMdCode className=" text-xl text-white"/>
-                <h2 className="text-(--black) w-full text-white">Frontend</h2>
+                <h2 className="text-(--black) text-base  w-full text-white">Frontend</h2>
               </div>
               <div className="flex flex-wrap gap-4 justify-start">
                 {techStack.frontend.map((lang, index) => (
@@ -186,7 +186,7 @@ useEffect(() => {
             <div className="flex flex-col items-center border  border-gray-700 p-4 rounded-lg">
               <div className="flex w-full flex-row gap-2 mb-4 items-center justify-center ">
                 <LuDatabase className="text-lg text-white"/>
-                <h2 className="text-(--black) w-full text-white">Backend & Deployment</h2>
+                <h2 className="text-(--black) w-full text-white text-base">Backend & Deployment</h2>
               </div>
               <div className="flex flex-wrap gap-4 ">
                 {techStack.backend.map((lang, index) => (
