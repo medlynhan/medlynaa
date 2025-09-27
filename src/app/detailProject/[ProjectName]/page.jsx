@@ -9,6 +9,8 @@ import { MdMovie } from "react-icons/md";
 import { IoCloseCircleSharp } from "react-icons/io5";
 import ImageCarousel from '../../../components/ImageCarousell';
 import { projectData } from '../../../data/projects';
+import { motion } from "framer-motion";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function page() {
     
@@ -23,17 +25,40 @@ export default function page() {
   const project = projectData[ProjectName];
 
 
+
+    // Get all project names
+  const projectNames = Object.keys(projectData);
+
+  // Find the current project index
+  const currentIndex = projectNames.indexOf(ProjectName);
+
+  // Get the next project name (circular navigation, i.e., from last back to first)
+  const nextProject = projectNames[(currentIndex + 1) % projectNames.length];
+
+  const handleNextProject = () => {
+    // Navigate to the next project
+    router.push(`/detailProject/${nextProject}`);
+  };
+
   if (!project) {
     return <div className='w-screen h-screen flex justify-center items-center'>Loading...</div>;
   }
 
+
+
     return (
-      <div className="md:px-10 max-w-screen">
+
+      <motion.div 
+        className="md:px-10 max-w-screen "
+        initial={{ opacity: 0, y: 50, rotateX: 10 }} // Mulai dari bawah dan sedikit miring
+        animate={{ opacity: 1, y: 0, rotateX: 0 }} // Animasi bergerak ke atas dan kembali ke posisi normal
+        transition={{ duration: 0.8, ease: "easeOut" }} // Durasi dan efek easing
+      >
         {/* Back Button */}
         <div className="mb-8">
           <button
-            className="font-semibold text-2xl md:text-4xl fixed top-5 right-5 text-gray-500 hover:text-gray-300 cursor-pointer"
-            onClick={() => router.back()}
+            className="font-semibold text-3xl md:text-4xl fixed top-5 right-5 text-gray-500 hover:text-gray-300 cursor-pointer"
+            onClick={() => router.push('/')}
           >
             <IoCloseCircleSharp />
           </button>
@@ -71,7 +96,7 @@ export default function page() {
               <p className=" font-semibold text-(--black)">⚒️ Tech Stack:</p>
               <div className='flex flex-wrap gap-4   justify-start items-start'>
                 {project.techStack.map((languange,index)=>(
-                  <ProgLang key={index} lang={languange} style={"text-yellow-500 border-yellow-500"}/>
+                  <ProgLang key={index} lang={languange} style={"text-yellow-500 border-yellow-500"} textStyle={"text-(--black)"}/>
                 ))}
               </div>
             </div>
@@ -100,13 +125,16 @@ export default function page() {
                   </p>
                 </div>
         </div>
-        <div className='p-8 flex flex-col sm:flex-row md:hidden justify-start items-start gap-4 mb-10'>
+        <div className='p-8 flex flex-col sm:flex-row md:hidden justify-start items-start gap-4 '>
               {project.liveUrl && (<a  target="_blank" href={`${project.liveUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer text-(--yellow)'><span><IoIosLink /></span> View Live Project</p></a>)}
               {project.githubUrl && (<a  target="_blank" href={`${project.githubUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer text-(--yellow)'><FaGithub />GitHub</p></a>)}
               {project.videoUrl && (<a  target="_blank" href={`${project.videoUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer text-(--yellow)'><MdMovie />Demo Video</p></a>)}
         </div>
-
-</div>
+        <div  onClick={handleNextProject} className='pb-8 text-(--black) px-8 flex justify-start md:justify-end items-center gap-4 mb-10 cursor-pointer hover:text-(--yellow) transition-all duration-300 '> 
+          <p >See Another Project </p>
+          <FaArrowRightLong />
+        </div>
+      </motion.div>
 
 
 

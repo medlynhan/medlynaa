@@ -9,8 +9,9 @@ import { DiVim } from "react-icons/di";
 import { useRouter } from 'next/navigation';
 import { motion } from "framer-motion";
 import { IoCaretForwardOutline } from "react-icons/io5";
-
-
+import ProgLang from "../components/ProgrammingLanguage";
+import { IoMdCode } from "react-icons/io";
+import { LuDatabase } from "react-icons/lu";
 export default function Home() {
 
   const router = useRouter();
@@ -86,12 +87,24 @@ useEffect(() => {
 
 
   
+  const techStack = {
+  frontend: [
+    "HTML5", "CSS3", "TailwindCSS", "JavaScript", "TypeScript", "React", "Next.js", "ShadCN",  "Figma"
+  ],
+  backend: [
+    "Node.js", "Express.js", "PHP", "Laravel", "ASP.NET", "C#", "MySQL", "PostgreSQL", "Docker", "Railway", "Vercel", 
+  ],
 
+};
   
   return (
     <div >
       {/*kolom kiri */}
-      <div className=" lg:min-h-[80vh] introduction-container lg:w-[35%] lg:absolute lg:left-0 lg:top-0 lg:fixed lg:ml-[5%] lg:my-[5%] ">
+
+        <motion.div 
+          className="lg:min-h-[80vh] introduction-container lg:w-[35%] lg:absolute lg:left-0 lg:top-0 lg:fixed lg:ml-[5%] lg:my-[5%]"
+          
+        >
         <div className="gap-4   w-full flex  flex-row h-full">
             <div className="flex justify-center items-center w-fit">
               <ProfileImage></ProfileImage>
@@ -131,11 +144,15 @@ useEffect(() => {
               <p className="hover:-translate-y-1">↗</p>
             </div> */}
         </div>
-      </div>
+      </motion.div>
       
       {/*kolom kanan */}
-      <div className="projects-container lg:w-[55%] lg:absolute lg:right-0 lg:top-0  pb-20 text-gray-300 lg:mr-[5%] ">
-      
+      <motion.div 
+        className="projects-container lg:w-[55%] lg:absolute lg:right-0 lg:top-0  pb-20 text-gray-300 lg:mr-[5%] "
+        initial={{ opacity: 0, y: 50, rotateX: 10 }} // Mulai dari bawah dan sedikit miring
+        animate={{ opacity: 1, y: 0, rotateX: 0 }} // Animasi bergerak ke atas dan kembali ke posisi normal
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }} // Durasi dan efek easing
+      >
         <div ref={aboutRef} className="flex flex-col gap-6 pt-20 ">
             <p className="sub-header-text lg:text-lg font-semibold ">About Me</p>
             <p className="text-justify">
@@ -147,6 +164,43 @@ useEffect(() => {
             <p className="text-justify">
               Here, I’ll show you some of my work from <span className="    ">competitions, team projects, and personal explorations.</span> I’m also active on <span className="   text-(--yellow) cursor-pointer "><a target="_blank" rel="noopener noreferrer" href="https://github.com/medlynhan">GitHub</a></span>, where I regularly share updates and new projects — feel free to check it out and follow along on my journey! ✨🚀
             </p>
+
+            <p className="sub-header-text lg:text-lg font-semibold mt-20 ">Tech Stack I’m Proficient In</p>
+  
+           <section className="grid grid-cols-1  gap-8">
+  
+            {/* Frontend Section */}
+            <div className="flex flex-col items-center border  border-gray-700  p-4 rounded-lg">
+              <div className="flex w-full flex-row gap-2 mb-4 items-center justify-center ">
+                <IoMdCode className=" text-xl text-white"/>
+                <h2 className="text-(--black) w-full text-white">Frontend</h2>
+              </div>
+              <div className="flex flex-wrap gap-4 justify-start">
+                {techStack.frontend.map((lang, index) => (
+                  <ProgLang key={index} lang={lang} style={""} textStyle={""}/>
+                ))}
+              </div>
+            </div>
+
+            {/* Backend Section */}
+            <div className="flex flex-col items-center border  border-gray-700 p-4 rounded-lg">
+              <div className="flex w-full flex-row gap-2 mb-4 items-center justify-center ">
+                <LuDatabase className="text-lg text-white"/>
+                <h2 className="text-(--black) w-full text-white">Backend & Deployment</h2>
+              </div>
+              <div className="flex flex-wrap gap-4 ">
+                {techStack.backend.map((lang, index) => (
+                    <ProgLang key={index} lang={lang} style={""} textStyle={""}/>
+                ))}
+              </div>
+            </div>
+
+
+
+          </section>
+
+
+  
         </div> 
           
         <div ref={teamRef} className="flex flex-col gap-6  pt-20  ">
@@ -190,8 +244,8 @@ useEffect(() => {
 
 
 
-      </div>
-      
+
+      </motion.div>
     </div>
     
 
