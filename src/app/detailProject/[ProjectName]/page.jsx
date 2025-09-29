@@ -112,7 +112,7 @@ export default function page() {
         <div className="flex flex-col md:flex-row h-full  gap-10 p-8 w-full items-start lg:py-20 pb-10  ">
                 {/*challenge */}
                 <div className='flex flex-col gap-2 lg:w-1/2'>
-                  <h3 className="font-semibold  name-area text-base md:text-xl text-(--black) ">Challenge:</h3>
+                  <h3 className="font-semibold  name-area text-base md:text-xl text-(--black) ">Problem:</h3>
                   <p className="text-gray-300 text-justify">
                         {project.challenge}
                   </p>

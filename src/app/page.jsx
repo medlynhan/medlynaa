@@ -89,10 +89,10 @@ useEffect(() => {
   
   const techStack = {
   frontend: [
-    "HTML5", "CSS3", "TailwindCSS", "JavaScript", "TypeScript", "React", "Next.js", "ShadCN",  "Figma"
+    "HTML5", "CSS3", "Bootstrap", "TailwindCSS", "JavaScript","JQuery", "TypeScript", "React", "Next.js", "ShadCN",  "Figma", "Framer Motion"
   ],
   backend: [
-    "Node.js", "Express.js", "PHP", "Laravel", "ASP.NET", "C#", "MySQL", "PostgreSQL", "Docker", "Railway", "Vercel", 
+    "Node.js", "Express.js", "PHP", "Laravel", "ASP.NET", "C#", "Java","Python", "MySQL", "PostgreSQL", "Docker", "Railway", "Vercel", 
   ],
 
 };
@@ -113,7 +113,7 @@ useEffect(() => {
               <p className=" font-mono text-left lg:text-base  font-semibold text-(--yellow)">Hello 👋</p>
               <p className="font-semibold text-(--black) name-area text-sm sm:text-lg md:text-2xl ">I'm <span className="">Madeline Handoyo</span></p>
               <div className=" w-fit flex  ">
-                  <p className=" text-gray-300  text-start w-full md:text-lg font-semibold">Aspiring Fullstack Developer</p>
+                  <p className=" text-gray-300  text-start w-full md:text-lg font-semibold">Aspiring Software Enginerr</p>
               </div>
               <div className="flex pt-2 flex lg:hidden justify-between items-center border-t-1 border-gray-700">
                 <Icon></Icon>
@@ -156,24 +156,42 @@ useEffect(() => {
         <div ref={aboutRef} className="flex flex-col gap-6 pt-20 ">
             <p className="sub-header-text lg:text-lg font-semibold ">About Me</p>
             <p className="text-justify">
-              Hey, I’m Madeline, a Computer Science student at BINUS University. <span className=" text-(--yellow) cursor-pointer">I love exploring different areas across the fullstack</span>, from backend logic with Node.js and Laravel to frontend design with React, Next.js, and TailwindCSS. Besides studying, sometimes I also take on freelance projects !
+              Hey, I’m a Computer Science student at BINUS University, strive to write <span className=" text-(--black) text-(--yellow) cursor-pointer">clean and maintainable code</span> as part of my learning journey. <span className=" text-(--yellow) cursor-pointer">I love exploring different areas across the fullstack</span>, from backend logic with Node.js and Laravel to frontend design with React, Next.js, and TailwindCSS. Besides studying, sometimes I also take on freelance projects!
             </p>
             <p className="text-justify">
               I enjoy building digital products end-to-end, but I especially find myself <span className=" text-(--black) text-(--yellow) cursor-pointer">drawn to the frontend</span> where I get to turn ideas into beautiful and interactive experiences. 
             </p>
             <p className="text-justify">
-              Here, I’ll show you some of my work from <span className="    ">competitions, team projects, and personal explorations.</span> I’m also active on <span className="   text-(--yellow) cursor-pointer "><a target="_blank" rel="noopener noreferrer" href="https://github.com/medlynhan">GitHub</a></span>, where I regularly share updates and new projects — feel free to check it out and follow along on my journey! ✨🚀
+              Here, I’ll show you some of my work from <span className="    ">competitions, team projects, and personal explorations.</span> I’m also active on    <div className="inline relative group  text-(--black) text-(--yellow) cursor-pointer">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/medlynhan"
+                        className="no-underline text-inherit cursor-auto"
+                      >
+                        <span className="lg:cursor-pointer">GitHub</span>
+                      </a>
+                      <img
+                        src="/github.png" // The image to show on hover
+                        alt="GitHub Hover"
+                        className="absolute top-[-20vh] left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer transform group-hover:scale-500 rounded-[0.07rem] hidden lg:block"
+                        width={50}
+                        height={50}
+                      />
+                    </div>
+                    
+                    
+                    , where I regularly share updates and new projects — feel free to check it out and follow along on my journey! ✨🚀
             </p>
 
-            <p className="sub-header-text lg:text-lg font-semibold mt-20 ">Tech Stack I’m Proficient In</p>
+            <p className="sub-header-text lg:text-lg font-semibold mt-20 ">Tech Stack </p>
   
            <section className="grid grid-cols-1  gap-8">
   
             {/* Frontend Section */}
             <div className="flex flex-col items-center border  border-gray-700  p-4 rounded-lg">
               <div className="flex w-full flex-row gap-2 mb-4 items-center justify-center ">
-                <IoMdCode className=" text-xl text-white"/>
-                <h2 className="text-(--black) text-base  w-full text-white">Frontend</h2>
+                <h2 className="text-(--black) text-base  w-full text-white">🎨 UI/UX & Frontend</h2>
               </div>
               <div className="flex flex-wrap gap-4 justify-start">
                 {techStack.frontend.map((lang, index) => (
@@ -185,8 +203,7 @@ useEffect(() => {
             {/* Backend Section */}
             <div className="flex flex-col items-center border  border-gray-700 p-4 rounded-lg">
               <div className="flex w-full flex-row gap-2 mb-4 items-center justify-center ">
-                <LuDatabase className="text-lg text-white"/>
-                <h2 className="text-(--black) w-full text-white text-base">Backend & Deployment</h2>
+                <h2 className="text-(--black) w-full text-white text-base">⚒️ Backend & Deployment</h2>
               </div>
               <div className="flex flex-wrap gap-4 ">
                 {techStack.backend.map((lang, index) => (
