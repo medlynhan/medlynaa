@@ -61,7 +61,7 @@ export default function ExperienceSection() {
                   <h3 className="text-gray-300 font-semibold lg:text-base ">{exp.role}</h3>
                 </div>
                 <p className="text-gray-500 text-xs mb-3 ">{exp.date}</p>
-                <p className="text-gray-400 mb-3 text-xs ">{exp.description}</p>
+                <p className="text-gray-300 mb-3 text-xs ">{exp.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill, i) => (
                     <span

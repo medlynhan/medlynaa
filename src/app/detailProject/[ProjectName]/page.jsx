@@ -80,7 +80,7 @@ export default function page() {
         {/* Back Button */}
         <div className="mb-8">
           <button
-            className="font-semibold text-3xl md:text-4xl fixed top-5 right-5 z-50 text-gray-400 hover:text-gray-400 cursor-pointer transition-all duration-300 "
+            className="font-semibold text-3xl md:text-4xl fixed top-5 right-5 z-50 text-gray-300 hover:text-gray-300 cursor-pointer transition-all duration-300 "
             onClick={() => router.push('/')}
           >
             <IoCloseCircleSharp />
@@ -105,15 +105,15 @@ export default function page() {
             </div>          
             <div className='flex flex-col '>
               <p className=" font-semibold text-gray-200"> Project Type:</p>
-              <span className="text-gray-400">{project.type}</span>
+              <span className="text-gray-300">{project.type}</span>
             </div>
             <div className='flex flex-col '>
               <p className=" font-semibold text-gray-200"> Role:</p>
-              <p className="text-gray-400">{project.role}</p>
+              <p className="text-gray-300">{project.role}</p>
             </div>
             <div className='flex flex-col '>
               <p className=" font-semibold text-gray-200"> Year Accomplished:</p>
-              <p className="text-gray-400">{project.year}</p>
+              <p className="text-gray-300">{project.year}</p>
             </div>
             <div className='flex flex-col gap-2'>
               <p className=" font-semibold text-gray-200"> Tech Stack:</p>
@@ -139,7 +139,7 @@ export default function page() {
             <div className="flex flex-col gap-2 lg:w-4/6 ">
               <h3 className="font-semibold name-area text-base md:text-xl text-gray-200  pb-3 border-b-1 border-gray-700   ">Challenge</h3>
               {Array.isArray(project.challenge) ? (
-                <ul className="list-disc list-inside text-gray-400 space-y-1">
+                <ul className="list-disc list-inside text-gray-300 space-y-1">
                   {project.challenge.map((item, idx) => (
                     <li key={idx} className="whitespace-normal leading-relaxed">
                       {item}
@@ -147,14 +147,14 @@ export default function page() {
                   ))}
                 </ul>
               ) : (
-                <p className="text-gray-400 text-start md:text-justifyt">{project.challenge}</p>
+                <p className="text-gray-300 text-start md:text-justifyt">{project.challenge}</p>
               )}
             </div>
             {/* Solutions*/}
             <div className="flex flex-col gap-2 lg:w-4/6 ">
               <h3 className="font-semibold name-area text-base md:text-xl text-gray-200  pb-3 border-b-1 border-gray-700   ">Solution</h3>
               {Array.isArray(project.solution) ? (
-                <ul className="list-disc list-inside text-gray-400 space-y-1">
+                <ul className="list-disc list-inside text-gray-300 space-y-1">
                   {project.solution.map((item, idx) => (
                     <li key={idx} className="whitespace-normal leading-relaxed">
                       {item}
@@ -162,7 +162,7 @@ export default function page() {
                   ))}
                 </ul>
               ) : (
-                <p className="text-gray-400 text-start md:text-justifyt">{project.solution}</p>
+                <p className="text-gray-300 text-start md:text-justifyt">{project.solution}</p>
               )}
             </div>
           </div>
@@ -170,7 +170,7 @@ export default function page() {
             <div className="flex flex-col gap-2 lg:w-4/6 ">
               <h3 className="font-semibold name-area text-base md:text-xl text-gray-200 pb-3 border-b-1 border-gray-700  ">My Contribution</h3>
               {Array.isArray(project.highlights) ? (
-                <ul className="list-disc list-inside text-gray-400 space-y-1">
+                <ul className="list-disc list-inside text-gray-300 space-y-1">
                   {project.highlights.map((item, idx) => (
                     <li key={idx} className="whitespace-normal leading-relaxed">
                       {item}
@@ -178,14 +178,14 @@ export default function page() {
                   ))}
                 </ul>
               ) : (
-                <p className="text-gray-400 text-start md:text-justifyt">{project.highlights}</p>
+                <p className="text-gray-300 text-start md:text-justifyt">{project.highlights}</p>
               )}
             </div>
             {/* Challange*/}
             <div className="flex flex-col gap-2 lg:w-4/6 ">
               <h3 className="font-semibold name-area text-base md:text-xl text-gray-200  pb-3 border-b-1 border-gray-700  ">Result & Reflection</h3>
               {Array.isArray(project.result) ? (
-                <ul className="list-disc list-inside text-gray-400 space-y-1">
+                <ul className="list-disc list-inside text-gray-300 space-y-1">
                   {content.map((item, idx) => (
                     <li key={idx} className="whitespace-normal leading-relaxed">
                       {item}
@@ -193,7 +193,7 @@ export default function page() {
                   ))}
                 </ul>
               ) : (
-                <p className="text-gray-400 text-start md:text-justifyt">{project.result}</p>
+                <p className="text-gray-300 text-start md:text-justifyt">{project.result}</p>
               )}
             </div>
         </div>
@@ -275,7 +275,7 @@ export default function page() {
               <h3 className="font-semibold name-area text-base md:text-xl text-gray-200 pb-3 ">{title}</h3>
               
               {Array.isArray(content) ? (
-                <ul className="list-disc list-inside text-gray-400 space-y-1">
+                <ul className="list-disc list-inside text-gray-300 space-y-1">
                   {content.map((item, idx) => (
                     <li key={idx} className="whitespace-normal leading-relaxed">
                       {item}
@@ -283,7 +283,7 @@ export default function page() {
                   ))}
                 </ul>
               ) : (
-                <p className="text-gray-400 text-start md:text-justify">{content}</p>
+                <p className="text-gray-300 text-start md:text-justify">{content}</p>
               )}
             </motion.div>
           </div>
