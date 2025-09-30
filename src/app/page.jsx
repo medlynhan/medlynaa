@@ -118,7 +118,7 @@ useEffect(() => {
               <p className=" font-mono text-left lg:text-base  font-semibold text-yellow-600">Hello 👋</p>
               <p className="font-semibold text-gray-200 name-area text-sm sm:text-lg md:text-2xl ">I'm <span className="">Madeline Handoyo</span></p>
               <div className=" w-fit flex  ">
-                  <p className=" text-gray-300  text-start w-full md:text-lg font-semibold">Aspiring Software Engineer</p>
+                  <p className=" text-(--gray)  text-start w-full md:text-lg font-semibold">Aspiring Software Engineer</p>
               </div>
               <div className="flex pt-2 flex lg:hidden justify-between items-center border-t-1 border-gray-700">
                 <Icon></Icon>
@@ -153,7 +153,7 @@ useEffect(() => {
       
       {/*kolom kanan */}
       <motion.div 
-        className="projects-container lg:w-[55%] lg:absolute lg:right-0 lg:top-0  pb-20 text-gray-300 lg:mr-[5%] "
+        className="projects-container lg:w-[55%] lg:absolute lg:right-0 lg:top-0  pb-20 text-(--gray) lg:mr-[5%] "
         initial={{ opacity: 0, y: 100, rotateX: 10 }} // Mulai dari bawah dan sedikit miring
         animate={{ opacity: 1, y: 0, rotateX: 0 }} // Animasi bergerak ke atas dan kembali ke posisi normal
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }} // Durasi dan efek easing

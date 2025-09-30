@@ -58,10 +58,10 @@ export default function ExperienceSection() {
               <div className=" p-3 rounded-md  ">
                 <div className="flex items-center gap-2 mb-2">
                   {exp.icon}
-                  <h3 className="text-gray-300 font-semibold lg:text-base ">{exp.role}</h3>
+                  <h3 className="text-(--gray) font-semibold lg:text-base ">{exp.role}</h3>
                 </div>
                 <p className="text-gray-500 text-xs mb-3 ">{exp.date}</p>
-                <p className="text-gray-300 mb-3 text-xs ">{exp.description}</p>
+                <p className="text-(--gray) mb-3 text-xs ">{exp.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill, i) => (
                     <span

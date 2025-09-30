@@ -54,7 +54,7 @@ export default function ImageCarousel({ images }) {
       {/* Tombol Next dengan animasi opacity */}
       <motion.button
         onClick={handleNext}
-        className="absolute text-xl sm:text-2xl transition-all duration-300 text-gray-300 hover:text-gray-300 right-0 top-1/2 transform -translate-y-1/2 cursor-pointer z-20"
+        className="absolute text-xl sm:text-2xl transition-all duration-300 text-(--gray) hover:text-(--gray) right-0 top-1/2 transform -translate-y-1/2 cursor-pointer z-20"
         initial={{ opacity: 0 }} // Tombol dimulai dengan opacity 0
         animate={{ opacity: isAnimating ? 0 : 1 }} // Tombol hanya muncul setelah animasi selesai
         transition={{ duration: 0.3 }}
@@ -65,7 +65,7 @@ export default function ImageCarousel({ images }) {
       {/* Tombol Prev dengan animasi opacity */}
       <motion.button
         onClick={handlePrev}
-        className="absolute text-lg sm:text-2xl transition-all duration-300 text-gray-300 hover:text-gray-300 left-0 top-1/2 transform -translate-y-1/2 cursor-pointer z-20"
+        className="absolute text-lg sm:text-2xl transition-all duration-300 text-(--gray) hover:text-(--gray) left-0 top-1/2 transform -translate-y-1/2 cursor-pointer z-20"
         initial={{ opacity: 0 }} // Tombol dimulai dengan opacity 0
         animate={{ opacity: isAnimating ? 0 : 1 }} // Tombol hanya muncul setelah animasi selesai
         transition={{ duration: 0.5 }}

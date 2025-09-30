@@ -6,7 +6,7 @@
 @import "tailwindcss";
 
 :root {
-  --gray: #d9d9d9ff;
+  --gray: #b0b8c4;
   --white: #0e161d;
   --black: #fdfcfc;
   --yellow: rgb(209, 149, 46);

@@ -30,7 +30,7 @@ export default function Project({title,proglang, link, imageLink,projectType, ac
 
   return (
     <div 
-      className='text-gray-300 border-gray-700 project  hover:bg-gray-800/20  rounded-lg hover:scale-102  transition duration-300 ease-in-out  hover:shadow-md hover:shadow-(--yellow)' 
+      className='text-(--gray) border-gray-700 project  hover:bg-gray-800/20  rounded-lg hover:scale-102  transition duration-300 ease-in-out  hover:shadow-md hover:shadow-(--yellow)' 
       onMouseEnter={() => setHover(true)} 
       onMouseLeave={ () => setHover(false)} 
       onClick={onClick}
