@@ -17,13 +17,13 @@ export default function RootLayout({children}) {
 
   return (
     <html lang="en">
-      <body className="relative text-xs sm:text-sm lg:text-base text-gray-300 " onMouseMove={handleMouseMove}>
+      <body className="relative text-xs sm:text-sm lg:text-base text-gray-400 " onMouseMove={handleMouseMove}>
           <motion.div
             className="absolute w-50 h-50 rounded-full pointer-events-none lg:flex hidden"
             style={{
               top: position.y - 100 + "px",
               left: position.x - 100 + "px", // Agar cursor berada di tengah
-              backgroundColor: "rgba(42, 68, 114, 0.5)", 
+              backgroundColor: "#2a447280", 
               boxShadow: "0 0 50vw rgba(78, 125, 207, 1)",
               filter: "blur(10vw)",
             }}
