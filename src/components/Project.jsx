@@ -3,6 +3,7 @@ import ProgLang from './ProgrammingLanguage';
 import Image from "next/image";
 import { BsArrowUpRight } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
+import { FaTrophy } from "react-icons/fa";
 
 export default function Project({title,proglang, link, imageLink,projectType, achievement,description, onClick, type}) {
   
@@ -56,7 +57,7 @@ export default function Project({title,proglang, link, imageLink,projectType, ac
             <Image src={imageLink} alt="Madeline Profile" width={250} height={100} className={`rounded-lg ${isHovered ? 'opacity-100' : 'opacity-100'}`} />
           </div>
           <div className='flex gap-4 flex-col text-start md:text-justify'>
-            {achievement && (<div className='text-sm font-semibold'>{achievement}</div>)}
+            {achievement && (<div className='text-sm font-semibold flex items-center gap-2 text-yellow-600'><FaTrophy/> <p>{achievement}</p></div>)}
             <div className='text-sm font-semibold'>{projectType}</div>
             <div className='text-sm'>{description}</div>
           </div>

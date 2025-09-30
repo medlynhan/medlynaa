@@ -49,7 +49,7 @@ Tapaknusa: {
     "/tapaknusa 7.png",
   ],
   highlights: [
-    "Led UI/UX design, ensuring intuitive flows and visually appealing interfaces aligned with cultural branding.",
+    "Make UI/UX design, ensuring intuitive flows and visually appealing interfaces aligned with cultural branding.",
     "Engineered full-stack e-commerce features (cart, orders, authentication) with clean MVC architecture.",
     "Developed responsive frontend with custom CSS and jQuery to deliver a smooth user experience.",
     "Designed and optimized database schema to ensure reliable data relationships and performance."

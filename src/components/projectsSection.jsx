@@ -11,6 +11,7 @@ const projects = [
     proglang: ["Next.js", "Typescript", "React", "Tailwind CSS", "ShadCN UI", "Supabase", "Vercel"],
     link: "https://leluri.vercel.app/",
     imageLink: "/leluri.png",
+    achievement : "Top 5 ITTC 2025 ",
     type: "Team",
     route: "Leluri",
   },
@@ -22,6 +23,7 @@ const projects = [
     proglang: ["Laravel", "HTML", "CSS", "JQuery", "MySQL", "Railway"],
     link: "https://tapaknusa.up.railway.app/",
     imageLink: "/tapaknusa.png",
+    achievement : "Top 6 PARAS ICT X 2025 ",
     type: "Personal",
     route: "Tapaknusa",
   },
@@ -58,6 +60,7 @@ export default function ProjectsSection({ individualRef }) {
             imageLink={proj.imageLink}
             description={proj.description}
             type={proj.type}
+            achievement = {proj.achievement}
           />
         </motion.div>
       ))}

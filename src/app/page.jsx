@@ -163,20 +163,17 @@ useEffect(() => {
         >
             <p className="sub-header-text lg:text-lg font-semibold ">About Me</p>
             <p className="text-start md:text-justify">
-              Hey, I’m Madeline — a third-year Computer Science student at BINUS University with a strong interest in software engineering, UI/UX, and frontend development. I strive to write <span className=" text-gray-200  hover:text-yellow-600 cursor-pointer">clean and maintainable code</span> as part of my learning journey. <span className="text-gray-200 hover:text-yellow-600 cursor-pointer"> I continuously exploring different areas of the full stack.</span> From backend logic with Node.js and Laravel to frontend design with React, Next.js, and TailwindCSS, and more.
+              Hey, I’m Madeline — <span className="text-gray-200  hover:text-yellow-600 cursor-pointer">a third-year Computer Science student</span> at BINUS University with a strong interest in software engineering, UI/UX, and frontend development.  <span className=" text-gray-200  hover:text-yellow-600 cursor-pointer">I strive to write clean and maintainable code</span> as part of my learning journey.  I continuously exploring different areas of the full stack. From backend logic with Node.js and Laravel to frontend design with React, Next.js, and TailwindCSS, and more.
             </p>
             <p className="text-start md:text-justify">
-              <span className=" text-gray-200 hover:text-yellow-600 cursor-pointer">What excites me most is frontend development,</span> where I can transform ideas into intuitive, interactive, and visually engaging experiences. <span className=" text-gray-200 hover:text-yellow-600 cursor-pointer">I’m always eager to keep learning and sharpening my skills</span>, embracing challenges as opportunities to grow and never giving up on the journey.
-            </p>
-            <p className="text-start md:text-justify">
-              Here, I’ll show you some of my work from <span className="    ">competitions, team projects, and personal explorations.</span> I’m also active on   <div className="inline relative group  text-gray-200 hover:text-yellow-600 cursor-pointer">
+              Here, I’ll show you some of my work from <span className="    ">competitions, team projects, and personal explorations.</span> I’m also active on   <div className="inline relative group text-gray-200 hover:text-yellow-600 cursor-pointer">
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://github.com/medlynhan"
                         className="no-underline text-inherit cursor-auto"
                       >
-                        <span className="lg:cursor-pointer">GitHub</span>
+                        <span className="cursor-pointer">GitHub</span>
                       </a>
                       <img
                         src="/github.png" // The image to show on hover
