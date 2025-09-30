@@ -159,7 +159,7 @@ useEffect(() => {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }} // Durasi dan efek easing
       >
         <motion.div  ref={aboutRef} 
-              className="flex flex-col gap-6 pt-20 "
+              className="flex flex-col gap-6 md:pt-20 "
         >
             <p className="sub-header-text lg:text-lg font-semibold ">About Me</p>
             <p className="text-start md:text-justify">
@@ -193,7 +193,7 @@ useEffect(() => {
         </motion.div> 
       
 
-      <motion.div  ref={teamRef}  className="flex flex-col gap-6   pt-20 "
+      <motion.div  ref={teamRef}  className="flex flex-col gap-6   md:pt-20 "
       >
         <ExperienceSection></ExperienceSection>
       </motion.div>
@@ -201,7 +201,7 @@ useEffect(() => {
 
 
           
-        <div ref={individualRef} className="flex flex-col gap-6   pt-20 ">
+        <div ref={individualRef} className="flex flex-col gap-6   md:pt-20 ">
             <ProjectsSection></ProjectsSection>
         </div> 
         

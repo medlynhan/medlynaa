@@ -101,7 +101,7 @@ export default function page() {
               {project.videoUrl && (<a  target="_blank" href={`${project.videoUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer hover:text-yellow-600'><MdMovie />Demo Video</p></a>)}
             </div>
               <p className="font-semibold  name-area text-lg sm:text-xl md:text-3xl text-gray-200" >{project.name} </p>
-              <p className=" md:text-lg  text-yellow-600">{project.description}</p>
+              <p className=" md:text-lg  text-yellow-600 font-semibold">{project.description}</p>
             </div>          
             <div className='flex flex-col '>
               <p className=" font-semibold text-gray-200"> Project Type:</p>
@@ -131,10 +131,10 @@ export default function page() {
         
         {/* kolom 2  (md)*/}
         <div 
-            className="flex lg:hidden flex-col h-full gap-10  justify-start lg:flex-row kolom-2  lg: rounded-md border-gray-700 w-full mt-10 lg:pt-0 px-8 "
+            className="flex lg:hidden flex-col h-full gap-10  justify-start lg:flex-row kolom-2  lg: rounded-md border-gray-700 w-full  px-8 "
 
         >
-          <div className='h-full w-full flex flex-col gap-6 justify-start pt-12 items-end '>
+          <div className='h-full w-full flex flex-col gap-6 justify-start  items-end '>
             {/* Challange*/}
             <div className="flex flex-col gap-2 lg:w-4/6 ">
               <h3 className="font-semibold name-area text-base md:text-xl text-gray-200  pb-3 border-b-1 border-gray-700   ">Challenge</h3>
