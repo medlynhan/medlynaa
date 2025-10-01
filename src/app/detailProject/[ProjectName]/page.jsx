@@ -147,7 +147,7 @@ export default function page() {
                   ))}
                 </ul>
               ) : (
-                <p className="text-(--gray) text-start md:text-justifyt">{project.challenge}</p>
+                <p className="text-(--gray) text-start  t">{project.challenge}</p>
               )}
             </div>
             {/* Solutions*/}
@@ -162,7 +162,7 @@ export default function page() {
                   ))}
                 </ul>
               ) : (
-                <p className="text-(--gray) text-start md:text-justifyt">{project.solution}</p>
+                <p className="text-(--gray) text-start  t">{project.solution}</p>
               )}
             </div>
           </div>
@@ -178,7 +178,7 @@ export default function page() {
                   ))}
                 </ul>
               ) : (
-                <p className="text-(--gray) text-start md:text-justifyt">{project.highlights}</p>
+                <p className="text-(--gray) text-start  t">{project.highlights}</p>
               )}
             </div>
             {/* Challange*/}
@@ -193,7 +193,7 @@ export default function page() {
                   ))}
                 </ul>
               ) : (
-                <p className="text-gray-400 text-start md:text-justifyt">{project.result}</p>
+                <p className="text-gray-400 text-start  t">{project.result}</p>
               )}
             </div>
         </div>
@@ -283,7 +283,7 @@ export default function page() {
                   ))}
                 </ul>
               ) : (
-                <p className="text-(--gray) text-start md:text-justify">{content}</p>
+                <p className="text-(--gray) text-start  ">{content}</p>
               )}
             </motion.div>
           </div>
@@ -295,8 +295,8 @@ export default function page() {
               {project.githubUrl && (<a  target="_blank" href={`${project.githubUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer text-gray-200 hover:text-yellow-600'><FaGithub />GitHub</p></a>)}
               {project.videoUrl && (<a  target="_blank" href={`${project.videoUrl}`}><p className='flex gap-2 whitespace-nowrap items-center cursor-pointer text-gray-200 hover:text-yellow-600'><MdMovie />Demo Video</p></a>)}
         </div>
-        <div  onClick={handleNextProject} className='lg:pt-8 pb-8 text-gray-200 px-8 flex justify-start md:justify-end items-center gap-4 mb-10 cursor-pointer text-yellow-600 transition-all duration-300  '> 
-          <p >See Another Project </p>
+        <div onClick={handleNextProject} className='lg:pt-8 pb-8 text-gray-200 px-8 flex justify-start md:justify-end items-center gap-4 mb-10 cursor-pointer text-yellow-600 transition-all duration-300  '> 
+          <p>See Another Project </p>
           <BsArrowRight />
         </div>
       </motion.div>

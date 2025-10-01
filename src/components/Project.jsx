@@ -45,9 +45,9 @@ export default function Project({title,proglang, link, imageLink,projectType, ac
             <p className={`font-mono  font-semibold text-base  ${isHovered ? 'text-yellow-600' : 'text-gray-200'}`}>{title} </p>
             <p className={` ${isHovered ? 'text-yellow-600 -translate-y-1 '  : 'text-gray-200'}`}><BsArrowUpRight/></p>
           </div>
-          <div className={`hidden text-black  border  ${isHovered ? '  bg-yellow-600' : 'bg-gray-400/50'} rounded-sm px-3 sm:flex justify-center gap-1 items-center`}>
+          <div className={` text-black  border  ${isHovered ? '  bg-yellow-600' : 'bg-gray-400/50'} rounded-sm px-3 flex justify-center gap-1 items-center`}>
             <GoDotFill className='text-[0.5rem]'/>
-            <p className='text-[0.7rem] font-semibold'>{type} Project</p>
+            <p className='text-[0.7rem] font-semibold'>{type} <span className='hidden sm:inline-block'>Project</span></p>
           </div>
         </div>
         
@@ -56,7 +56,7 @@ export default function Project({title,proglang, link, imageLink,projectType, ac
           <div  className=" rounded-lg lg:min-w-[15em]">
             <Image src={imageLink} alt="Madeline Profile" width={250} height={100} className={`rounded-lg ${isHovered ? 'opacity-100' : 'opacity-100'}`} />
           </div>
-          <div className='flex gap-4 flex-col text-start md:text-justify'>
+          <div className='flex gap-4 flex-col text-start  '>
             {achievement && (<div className='text-sm font-semibold flex items-center gap-2 text-yellow-600'><FaTrophy/> <p>{achievement}</p></div>)}
             <div className='text-sm font-semibold'>{projectType}</div>
             <div className='text-sm'>{description}</div>

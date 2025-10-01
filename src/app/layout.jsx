@@ -17,7 +17,7 @@ export default function RootLayout({children}) {
 
   return (
     <html lang="en">
-      <body className="relative text-xs sm:text-sm lg:text-base text-(--gray) " onMouseMove={handleMouseMove}>
+      <body className="relative text-xs sm:text-sm lg:text-base text-(--gray) max-w-screen overflow-x-hidden " onMouseMove={handleMouseMove}>
           <motion.div
             className="absolute w-50 h-50 rounded-full pointer-events-none lg:flex hidden"
             style={{

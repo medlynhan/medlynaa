@@ -118,13 +118,13 @@ useEffect(() => {
               <p className=" font-mono text-left lg:text-base  font-semibold text-yellow-600">Hello 👋</p>
               <p className="font-semibold text-gray-200 name-area text-sm sm:text-lg md:text-2xl ">I'm <span className="">Madeline Handoyo</span></p>
               <div className=" w-fit flex  ">
-                  <p className=" text-(--gray)  text-start w-full md:text-lg font-semibold">Aspiring Software Engineer</p>
+                  <p className=" text-(--gray)  text-start w-full md:text-lg font-semibold pb-2">Aspiring Software Engineer</p>
               </div>
-              <div className="flex pt-2 flex lg:hidden justify-between items-center border-t-1 border-gray-700">
+              <div className="flex pt-2 flex flex-wrap gap-4 lg:hidden justify-start gap-4 items-center border-t-1 border-gray-700">
                 <Icon></Icon>
-                {/* <div className="px-2 py-1 border-1 border-(--black) text-gray-200 rounded-full hover:border-yellow-600 hover:text-yellow-600 cursor-pointer transition duration-300 ease-in-out">
-                  <p>View CV ↗</p>
-                </div> */}
+                <div className="py-0.5 px-2 sm:flex hidden  border-1 bg-gray-200 text-(--white) font-semibold text-xs rounded-full  hover:bg-yellow-600 hover:text-(--white) cursor-pointer transition duration-300 ease-in-out">
+                  <a href="https://drive.google.com/file/d/1Rzwvgkz_jpqzAcsbdB2fggLeGDvXqiLF/view?usp=sharing" target="_blank" rel="noopener noreferrer"><p>CV ↗</p></a>
+                </div>
               </div>
             </div>
         </div>
@@ -142,12 +142,11 @@ useEffect(() => {
               <p onClick={() => scrollToSection(individualRef)}> <span></span>Projects</p>
             </div>            
         </div>
-        <div className="w-full hidden lg:flex flex-row justify-between items-center pt-2  ">
+        <div className="w-full hidden lg:flex flex-row justify-start gap-4 items-center pt-4 border-gray-700 ">
             <Icon></Icon>
-            {/* <div className="flex  gap-2 items-center px-2 py-1 border-1 border-(--black) text-gray-200 rounded-full hover:border-yellow-600 hover:text-yellow-600 cursor-pointer transition duration-300 ease-in-out">
-              <p>View CV </p>
-              <p className="hover:-translate-y-1">↗</p>
-            </div> */}
+            <div className="px-2 py-1 border-1 bg-gray-200 text-(--white) font-semibold text-xs rounded-full  hover:bg-yellow-600 hover:text-(--white) cursor-pointer transition duration-300 ease-in-out">
+              <a href="https://drive.google.com/file/d/1Rzwvgkz_jpqzAcsbdB2fggLeGDvXqiLF/view?usp=sharing" target="_blank" rel="noopener noreferrer"><p>CV ↗</p></a>
+            </div>
         </div>
       </motion.div>
       
