@@ -24,7 +24,7 @@ export const projectData = {Leluri: {
     "Developed modular frontend components with ShadCN UI for scalable development.",
     "Deployed the platform on Vercel and managed bug-fixing to ensure stability during demos."
   ],
-  result: "Currently in progress at IITC 2025. The project strengthened my leadership skills by managing a team under pressure while balancing design and development responsibilities. I realized the importance of clearer coordination to prevent overlapping tasks, and gained hands-on experience in translating cultural vision into a functional digital product.",
+  result: "Top 5 of IITC 2025 Web Development Competition. The project strengthened my leadership skills by managing a team under pressure while balancing design and development responsibilities. I realized the importance of clearer coordination to prevent overlapping tasks, and gained hands-on experience in translating cultural vision into a functional digital product.",
   liveUrl: "https://leluri.vercel.app",
   githubUrl: "https://github.com/medlynhan/Leluri",
   videoUrl: "https://drive.google.com/file/d/1RzA4qnUSOQO6-vuTADqf4ch201KTUi3L/view"
