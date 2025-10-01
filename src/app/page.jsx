@@ -123,7 +123,7 @@ useEffect(() => {
               <div className="flex pt-2 flex flex-wrap gap-4 lg:hidden justify-start gap-4 items-center border-t-1 border-gray-700">
                 <Icon></Icon>
                 <div className="py-0.5 px-2 sm:flex hidden  border-1 bg-gray-200 text-(--white) font-semibold text-xs rounded-full  hover:bg-yellow-600 hover:text-(--white) cursor-pointer transition duration-300 ease-in-out">
-                  <a href="https://drive.google.com/file/d/1Rzwvgkz_jpqzAcsbdB2fggLeGDvXqiLF/view?usp=sharing" target="_blank" rel="noopener noreferrer"><p>CV ↗</p></a>
+                  <a href="https://drive.google.com/file/d/1w_GF9eIU0DvpGShlpZj-kmx3yaxhj3lF/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><p>CV ↗</p></a>
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@ useEffect(() => {
         <div className="w-full hidden lg:flex flex-row justify-start gap-4 items-center pt-4 border-gray-700 ">
             <Icon></Icon>
             <div className="px-2 py-1 border-1 bg-gray-200 text-(--white) font-semibold text-xs rounded-full  hover:bg-yellow-600 hover:text-(--white) cursor-pointer transition duration-300 ease-in-out">
-              <a href="https://drive.google.com/file/d/1Rzwvgkz_jpqzAcsbdB2fggLeGDvXqiLF/view?usp=sharing" target="_blank" rel="noopener noreferrer"><p>CV ↗</p></a>
+              <a href="https://drive.google.com/file/d/1w_GF9eIU0DvpGShlpZj-kmx3yaxhj3lF/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><p>CV ↗</p></a>
             </div>
         </div>
       </motion.div>
