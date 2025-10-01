@@ -11,21 +11,14 @@ const experiences = [
     icon: <FiCode className="text-yellow-600 text-xl" />,
   },
   {
-    role: "Scholarship Mentor · BINUS University",
+    role: "Tutor & Mentor · BINUS University",
     date: "Sep 2023 – Present",
     description:
-      "Awarded 16-credit scholarships two times streak. Mentored peers in OOP, AI, and Software Engineering, improving their academic performance and coding confidence.",
-    skills: ["Mentoring","Software Engineering", "Time Management" ],
-    icon: <FiUserCheck className="text-yellow-600 text-xl" />,
-  },
-  {
-    role: "Tutor · Short Semester",
-    date: "Jul 2025 – Sep 2025",
-    description:
-      "Taught Scientific Computing in Binus Short Semester. Simplified concepts for freshmen to boost understanding.",
-    skills: ["Tutoring", "Scientific Computing"],
+      "Awarded 16-credit scholarships two times streak. Mentored peers in OOP, AI, and Software Engineering, Agile, Code Reenginering, improving their academic performance and coding confidence.",
+    skills: ["Mentoring","Software Engineering","Time Management" ],
     icon: <FiBook className="text-yellow-600 text-xl" />,
   },
+
   {
     role: "Ureeka Member · BINUS",
     date: "Apr 2024 – Present",
