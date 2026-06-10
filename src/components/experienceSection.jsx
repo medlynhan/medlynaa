@@ -1,10 +1,24 @@
-import { FiCode, FiBook, FiAward, FiUserCheck } from "react-icons/fi";
+import { FiCode, FiBook, FiAward, FiUserCheck, FiBriefcase } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const experiences = [
+    {
+    role: "Application Developer · PT AIA Financial",
+    date: "Feb 2026 – Present",
+    description:
+      "Contributed to enterprise application development using .NET, C#, and Java. Maintained and enhanced production applications, resolved bugs, and supported system improvements in corporate environments.",
+    skills: [
+      ".NET",
+      "C#",
+      "Java",
+      "Backend Development",
+      "Problem Solving",
+    ],
+    icon: <FiBriefcase className="text-yellow-600 text-xl" />,
+  },
   {
     role: "Web Developer · Client Projects",
-    date: "Jul 2025 – Present",
+    date: "Jul 2025 – Feb 2026",
     description:
       "Built company profile websites for small businesses using Next.js, React, and TailwindCSS. Enhanced client visibility with responsive design and SEO-friendly implementation.",
     skills: ["Web Development", "SEO", "Attention to Detail"],

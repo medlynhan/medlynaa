@@ -118,12 +118,12 @@ useEffect(() => {
               <p className=" font-mono text-left lg:text-base  font-semibold text-yellow-600">Hello 👋</p>
               <p className="font-semibold text-gray-200 name-area text-sm sm:text-lg md:text-2xl ">I'm <span className="">Madeline Handoyo</span></p>
               <div className=" w-fit flex  ">
-                  <p className=" text-(--gray)  text-start w-full md:text-lg font-semibold pb-2">Aspiring Software Engineer</p>
+                  <p className=" text-(--gray)  text-start w-full md:text-lg font-semibold pb-2">Software Engineer</p>
               </div>
               <div className="flex pt-2 flex flex-wrap gap-4 lg:hidden justify-start gap-4 items-center border-t-1 border-gray-700">
                 <Icon></Icon>
                 <div className="py-0.5 px-2 sm:flex hidden  border-1 bg-gray-200 text-(--white) font-semibold text-xs rounded-full  hover:bg-yellow-600 hover:text-(--white) cursor-pointer transition duration-300 ease-in-out">
-                  <a href="https://drive.google.com/file/d/1w_GF9eIU0DvpGShlpZj-kmx3yaxhj3lF/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><p>CV <BsArrowUpRight className="inline-block"/></p></a>
+                  <a href="https://drive.google.com/file/d/1lp3D4tcBIFVludgHgpkFLWFP7wbpd71y/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><p>CV <BsArrowUpRight className="inline-block"/></p></a>
                 </div>
               </div>
             </div>
@@ -157,36 +157,69 @@ useEffect(() => {
         animate={{ opacity: 1, y: 0, rotateX: 0 }} // Animasi bergerak ke atas dan kembali ke posisi normal
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }} // Durasi dan efek easing
       >
-        <motion.div  ref={aboutRef} 
-              className="flex flex-col gap-6 md:pt-20 "
-        >
-            <p className="sub-header-text lg:text-lg font-semibold ">About Me</p>
-            <p className="text-start md:text-justify">
-              Hey, I’m Madeline — <span className="text-gray-200  hover:text-yellow-600 cursor-pointer">a third-year Computer Science student</span> at BINUS University with a strong interest in software engineering, UI/UX, and frontend development.  <span className=" text-gray-200  hover:text-yellow-600 cursor-pointer">I strive to write clean and maintainable code</span> as part of my learning journey.  I continuously exploring different areas of the full stack. From backend logic with Node.js and Laravel to frontend design with React, Next.js, and TailwindCSS, and more.
-            </p>
-            <p className="text-start md:text-justify">
-              Here, I’ll show you some of my work from <span className="    ">competitions, team projects, and personal explorations.</span> I’m also active on   <div className="inline relative group text-gray-200 hover:text-yellow-600 cursor-pointer">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/medlynhan"
-                        className="no-underline text-inherit cursor-auto"
-                      >
-                        <span className="cursor-pointer">GitHub</span>
-                      </a>
-                      <img
-                        src="/github.png" // The image to show on hover
-                        alt="GitHub Hover"
-                        className="absolute top-[-20vh] left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer transform group-hover:scale-500 rounded-[0.07rem] hidden lg:block"
-                        width={50}
-                        height={50}
-                      />
-                    </div>
-                    
-                    
-                    , where I regularly share updates and new projects — feel free to check it out and follow along on my journey! ✨🚀
-            </p>
-        </motion.div> 
+      <motion.div
+        ref={aboutRef}
+        className="flex flex-col gap-6 md:pt-20"
+      >
+        <p className="sub-header-text lg:text-lg font-semibold">
+          About Me
+        </p>
+
+        <p className="text-start md:text-justify">
+          Hey, I’m{" "}
+          <span className="text-gray-200 hover:text-yellow-600 cursor-pointer">
+            Madeline
+          </span>{" "}
+          — a third-year Computer Science student at BINUS University and an{" "}
+          <span className="text-gray-200 hover:text-yellow-600 cursor-pointer">
+            Application Developer at PT AIA Financial
+          </span>
+          . I mainly work with{" "}
+          <span className="text-gray-200 hover:text-yellow-600 cursor-pointer">
+            .NET, C#, and Java
+          </span>{" "}
+          for enterprise application development, with a strong focus on{" "}
+          <span className="text-gray-200 hover:text-yellow-600 cursor-pointer">
+            backend and fullstack development
+          </span>
+          .
+        </p>
+
+        <p className="text-start md:text-justify">
+          I also build web applications using{" "}
+          <span className="text-gray-200 hover:text-yellow-600 cursor-pointer">
+            React, Next.js, and TailwindCSS
+          </span>
+          , and enjoy solving technical problems, improving system reliability,
+          and building clean, maintainable software.
+        </p>
+
+        <p className="text-start md:text-justify">
+          You can also find more of my projects and experiments on{" "}
+
+          <div className="inline relative group text-gray-200 hover:text-yellow-600 cursor-pointer">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/medlynhan"
+              className="no-underline text-inherit"
+            >
+              <span className="cursor-pointer font-medium">
+                GitHub
+              </span>
+            </a>
+
+            <img
+              src="/github.png"
+              alt="GitHub Hover"
+              className="absolute top-[-20vh] left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer transform group-hover:scale-500 rounded-[0.07rem] hidden lg:block"
+              width={50}
+              height={50}
+            />
+          </div>
+          .
+        </p>
+      </motion.div>
       
 
       <motion.div  ref={teamRef}  className="flex flex-col gap-6   md:pt-20 "
