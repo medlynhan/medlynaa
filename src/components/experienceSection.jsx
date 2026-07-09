@@ -6,12 +6,11 @@ const experiences = [
     role: "Application Developer · PT AIA Financial",
     date: "Feb 2026 – Present",
     description:
-      "Contributed to enterprise application development using .NET, C#, and Java. Maintained and enhanced production applications, resolved bugs, and supported system improvements in corporate environments.",
+      "Contributed to enterprise application development mainly using C# and Java. Maintained and enhanced production applications, resolved bugs, and supported system improvements in corporate environments.",
     skills: [
-      ".NET",
-      "C#",
-      "Java",
       "Backend Development",
+      "REST API",
+      "Production Debugging",
       "Problem Solving",
     ],
     icon: <FiBriefcase className="text-yellow-600 text-xl" />,

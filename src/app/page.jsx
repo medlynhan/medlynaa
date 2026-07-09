@@ -123,7 +123,7 @@ useEffect(() => {
               <div className="flex pt-2 flex flex-wrap gap-4 lg:hidden justify-start gap-4 items-center border-t-1 border-gray-700">
                 <Icon></Icon>
                 <div className="py-0.5 px-2 sm:flex hidden  border-1 bg-gray-200 text-(--white) font-semibold text-xs rounded-full  hover:bg-yellow-600 hover:text-(--white) cursor-pointer transition duration-300 ease-in-out">
-                  <a href="https://drive.google.com/file/d/1lp3D4tcBIFVludgHgpkFLWFP7wbpd71y/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><p>CV <BsArrowUpRight className="inline-block"/></p></a>
+                  <a href="https://docs.google.com/document/d/1fbEXP9j5g709bYJVRWGwEnv0OivgSiMq/edit?usp=drive_link&ouid=115651130292567892111&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer"><p>CV <BsArrowUpRight className="inline-block"/></p></a>
                 </div>
               </div>
             </div>
@@ -170,32 +170,30 @@ useEffect(() => {
           <span className="text-gray-200 hover:text-yellow-600 cursor-pointer">
             Madeline
           </span>{" "}
-          — a third-year Computer Science student at BINUS University and an{" "}
+          — a Computer Science student at BINUS University and an{" "}
           <span className="text-gray-200 hover:text-yellow-600 cursor-pointer">
-            Application Developer at PT AIA Financial
+            Application Developer at AIA Financial
           </span>
-          . I mainly work with{" "}
+          . I build enterprise software using{" "}
           <span className="text-gray-200 hover:text-yellow-600 cursor-pointer">
-            .NET, C#, and Java
+            C#, Java, JavaScript, and .NET
           </span>{" "}
-          for enterprise application development, with a strong focus on{" "}
+          while gaining hands-on experience across{" "}
           <span className="text-gray-200 hover:text-yellow-600 cursor-pointer">
-            backend and fullstack development
+            backend, frontend, and full-stack development
           </span>
           .
         </p>
 
         <p className="text-start md:text-justify">
-          I also build web applications using{" "}
-          <span className="text-gray-200 hover:text-yellow-600 cursor-pointer">
-            React, Next.js, and TailwindCSS
-          </span>
-          , and enjoy solving technical problems, improving system reliability,
-          and building clean, maintainable software.
+          I enjoy solving technical problems, debugging issues, and building
+          reliable software with clean and maintainable code. Comfortable
+          working across different technologies, I’m always interested in
+          learning new things and improving how systems are built.
         </p>
 
         <p className="text-start md:text-justify">
-          You can also find more of my projects and experiments on{" "}
+          Here, I’ll show you some of the projects I’ve worked on — from competitions and personal builds. You can also explore more of my work on{" "}
 
           <div className="inline relative group text-gray-200 hover:text-yellow-600 cursor-pointer">
             <a
@@ -204,7 +202,7 @@ useEffect(() => {
               href="https://github.com/medlynhan"
               className="no-underline text-inherit"
             >
-              <span className="cursor-pointer font-medium">
+              <span className="cursor-pointePr font-medium">
                 GitHub
               </span>
             </a>

@@ -47,7 +47,7 @@ export default function Project({title,proglang, link, imageLink,projectType, ac
           </div>
           <div className={` text-black  border  ${isHovered ? '  bg-yellow-600' : 'bg-gray-400/50'} rounded-sm px-3 flex justify-center gap-1 items-center`}>
             <GoDotFill className='text-[0.5rem]'/>
-            <p className='text-[0.7rem] font-semibold'>{type} <span className='hidden sm:inline-block'>Project</span></p>
+            <p className='text-[0.7rem] font-semibold'>{type} <span className='hidden sm:inline-block'>Highlight Project</span></p>
           </div>
         </div>
         

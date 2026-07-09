@@ -1,12 +1,43 @@
 // data/projects.js
 
-export const projectData = {Leluri: {
+export const projectData = {
+  Leluri: {
   name: 'Leluri',
   description: 'Digital Cultural Community Platform',
   type: 'Web Dev Competition IITC 2025',
   role: 'Team Lead, UI/UX Designer, Frontend Developer',
   year: '2025',
   techStack: ["Next.js", "Typescript", "React", "Tailwind CSS", "ShadCN UI", "Supabase", "Vercel"],
+  challenge: "Many cultural projects in Indonesia focus only on introducing traditions, without building systems to sustain them. This leads to fading interest among youth, fewer opportunities for artisans, and traditions being treated as static displays instead of living practices. Culture risks being archived rather than experienced, losing its connection to daily life and future generations.",
+  solution: "Leluri was built as a digital community platform where artisans, studios, and youth can connect, learn, and collaborate. The platform supports cultural exchange through product showcases, shared experiences, and knowledge sharing, making culture participatory instead of passive. By integrating modern web technologies with community-driven design, Leluri reframes culture as something dynamic and relevant for younger audiences.",
+  images: [
+    "/leluri.png",
+    "/leluri 2.png",
+    "/leluri 3.png",
+    "/leluri 4.png",
+    "/leluri 5.png",
+    "/leluri 6.png",
+    "/leluri 7.png",
+  ],
+  highlights: [
+    "Led team, coordinating roles and tasks under competition time constraints.",
+    "Designed user-friendly interfaces in Figma, aligning UX flows with cultural storytelling.",
+    "Developed modular frontend components with ShadCN UI for scalable development.",
+    "Deployed the platform on Vercel and managed bug-fixing to ensure stability during demos."
+  ],
+  result: "Top 5 of IITC 2025 Web Development Competition. The project strengthened my leadership skills by managing a team under pressure while balancing design and development responsibilities. I realized the importance of clearer coordination to prevent overlapping tasks, and gained hands-on experience in translating cultural vision into a functional digital product.",
+  liveUrl: "https://leluri.vercel.app",
+  githubUrl: "https://github.com/medlynhan/Leluri",
+  videoUrl: "https://drive.google.com/file/d/1RzA4qnUSOQO6-vuTADqf4ch201KTUi3L/view"
+},
+
+  Leluri: {
+  name: 'Leluri',
+  description: 'Digital Cultural Community Platform',
+  type: 'Web Dev Competition IITC 2025',
+  role: 'Team Lead, Fullstack Developer',
+  year: '2025',
+  techStack: ["Next.js", "Typescript", "Tailwind CSS", "ShadCN UI", "Supabase", "Vercel"],
   challenge: "Many cultural projects in Indonesia focus only on introducing traditions, without building systems to sustain them. This leads to fading interest among youth, fewer opportunities for artisans, and traditions being treated as static displays instead of living practices. Culture risks being archived rather than experienced, losing its connection to daily life and future generations.",
   solution: "Leluri was built as a digital community platform where artisans, studios, and youth can connect, learn, and collaborate. The platform supports cultural exchange through product showcases, shared experiences, and knowledge sharing, making culture participatory instead of passive. By integrating modern web technologies with community-driven design, Leluri reframes culture as something dynamic and relevant for younger audiences.",
   images: [
