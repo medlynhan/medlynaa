@@ -8,7 +8,7 @@ const projects = [
     projectType: "Digital Cultural Community Platform",
     description:
       "Digital community platform that connects artisans, studios, and culture enthusiasts to keep Indonesian culture alive and collaborative in the digital era.",
-    proglang: ["Next.js", "Typescript", "React", "Tailwind CSS", "ShadCN UI", "Supabase", "Vercel"],
+    proglang: ["Next.js", "Typescript", "Tailwind CSS", "ShadCN UI", "Supabase", "Vercel"],
     link: "https://leluri.vercel.app/",
     imageLink: "/leluri.png",
     achievement : "Top 5 ITTC 2025 ",

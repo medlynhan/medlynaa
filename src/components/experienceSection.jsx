@@ -8,8 +8,8 @@ const experiences = [
     description:
       "Contributed to enterprise application development mainly using C# and Java. Maintained and enhanced production applications, resolved bugs, and supported system improvements in corporate environments.",
     skills: [
-      "Backend Development",
       "REST API",
+      "SQL",
       "Production Debugging",
       "Problem Solving",
     ],
